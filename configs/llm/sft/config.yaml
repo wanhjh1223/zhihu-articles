@@ -1,0 +1,108 @@
+# ============================================
+# LLM 监督微调配置 (SFT - Supervised Fine-Tuning)
+# ============================================
+# 目标: 让模型学会遵循指令和对话
+# 数据格式: Instruction-following (Alpaca/ShareGPT/Conversation)
+# 训练方式: 监督学习，只计算 assistant 回复部分的 loss
+
+# 模型配置
+model:
+  # 可以从预训练模型继续，也可以从基座模型开始
+  name: "./outputs/llm_pretrain/final"  # 或 "Qwen/Qwen2.5-7B"
+  model_revision: "main"
+  trust_remote_code: true
+  torch_dtype: "bf16"
+  use_flash_attention: true
+  
+  load_in_8bit: false
+  load_in_4bit: false
+
+# 数据配置
+data:
+  # 训练数据 (指令格式)
+  train_data_path: "./data/sft/train.jsonl"
+  eval_data_path: "./data/sft/val.jsonl"
+  
+  # 数据格式: auto|alpaca|sharegpt|conversation
+  format: "conversation"
+  
+  # 系统提示词 (可选)
+  system_prompt: "你是一个有用的 AI 助手，请认真回答用户的问题。"
+  
+  # 字段映射 (根据数据格式调整)
+  field_mapping:
+    # Conversation 格式
+    messages: "messages"
+    # Alpaca 格式
+    # instruction: "instruction"
+    # input: "input"
+    # output: "output"
+  
+  max_length: 2048
+  
+  # 模板配置
+  template:
+    # 是否使用聊天模板
+    use_chat_template: true
+    # 自定义模板 (可选)
+    # template_string: "..."
+
+# 训练配置
+training:
+  output_dir: "./outputs/llm_sft"
+  
+  num_train_epochs: 3
+  
+  # Batch 配置
+  per_device_train_batch_size: 4
+  per_device_eval_batch_size: 4
+  gradient_accumulation_steps: 4
+  
+  # 学习率 (SFT 通常比预训练大一些)
+  learning_rate: 2.0e-4
+  warmup_ratio: 0.03
+  lr_scheduler_type: "cosine"
+  
+  weight_decay: 0.01
+  max_grad_norm: 1.0
+  
+  # 保存配置
+  save_strategy: "steps"
+  save_steps: 500
+  save_total_limit: 3
+  
+  evaluation_strategy: "steps"
+  eval_steps: 500
+  
+  logging_strategy: "steps"
+  logging_steps: 10
+  
+  # 精度配置
+  fp16: false
+  bf16: true
+  
+  dataloader_num_workers: 4
+  dataloader_pin_memory: true
+  gradient_checkpointing: true
+  
+  # 关键: SFT 需要保留所有列
+  remove_unused_columns: false
+
+# LoRA 配置 (SFT 阶段常用)
+lora:
+  use_lora: true                     # SFT 阶段推荐使用 LoRA
+  r: 8                               # LoRA 秩
+  alpha: 32                          # LoRA alpha
+  dropout: 0.1                       # Dropout
+  target_modules: ["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"]
+  bias: "none"
+  task_type: "CAUSAL_LM"
+
+# 早停配置 (可选)
+early_stopping:
+  enabled: true
+  patience: 3                        # 早停耐心值
+  metric: "eval_loss"                # 监控指标
+
+seed: 42
+report_to: ["tensorboard"]

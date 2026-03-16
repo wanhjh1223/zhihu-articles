@@ -1,0 +1,75 @@
+# ============================================
+# PPO (Proximal Policy Optimization) / RLHF 配置
+# ============================================
+# 目标: 基于奖励模型使用 PPO 算法优化策略
+# 需要: 训练好的奖励模型 (Reward Model)
+# 数据格式: Prompt only
+
+# 模型配置
+model:
+  # 策略模型 (Actor)
+  actor_model_path: "./outputs/llm_sft/final"
+  
+  # Critic 模型 (Value function)
+  # 通常为奖励模型的 backbone
+  critic_model_path: "./outputs/reward_model/final"
+  
+  # 参考模型 (Ref)
+  ref_model_path: "./outputs/llm_sft/final"
+  
+  trust_remote_code: true
+  torch_dtype: "bf16"
+
+# 奖励模型配置
+reward_model:
+  model_path: "./outputs/reward_model/final"
+  trust_remote_code: true
+
+# 数据配置
+data:
+  train_data_path: "./data/rlhf/train.jsonl"
+  prompt_column: "prompt"
+  max_prompt_length: 1024
+  max_response_length: 512
+
+# PPO 特定配置
+ppo:
+  # PPO 超参数
+  learning_rate: 1.0e-5
+  batch_size: 32
+  mini_batch_size: 4
+  gradient_accumulation_steps: 1
+  
+  # 优化超参数
+  ppo_epochs: 4                     # 每个 batch 优化轮数
+  
+  # KL 惩罚系数
+  kl_coef: 0.2
+  
+  # 裁剪参数
+  cliprange: 0.2
+  cliprange_value: 0.2
+  
+  # 优势估计参数
+  gamma: 1.0                        # 折扣因子
+  lam: 0.95                         # GAE lambda
+  
+  # 奖励缩放
+  whiten_rewards: false             # 是否白化奖励
+
+# 训练配置
+training:
+  output_dir: "./outputs/llm_ppo"
+  
+  total_episodes: 10000             # 总训练 episode 数
+  
+  logging_steps: 10
+  save_steps: 500
+  
+  fp16: false
+  bf16: true
+  
+  gradient_checkpointing: true
+
+seed: 42
+report_to: ["tensorboard"]

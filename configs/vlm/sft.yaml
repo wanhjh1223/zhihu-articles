@@ -1,0 +1,47 @@
+# VLM 指令微调配置
+model:
+  llm_model_name: "./outputs/vlm_pretrain/final"  # 从预训练模型继续
+  vision_encoder_type: "clip"
+  vision_model_name: "clip-vit-large"
+  freeze_vision_encoder: true
+  freeze_llm: false  # SFT 阶段解冻 LLM
+  
+  projector_type: "mlp"
+  projector_hidden_dim: 4096
+  num_projector_layers: 2
+  
+  image_token_index: 32000
+  image_start_token: "<image>"
+  image_end_token: "</image>"
+  image_token: "<image_patch>"
+
+data:
+  train_data_path: "./data/vlm_sft/train.jsonl"
+  eval_data_path: "./data/vlm_sft/val.jsonl"
+  image_folder: "./data/images"
+  max_length: 2048
+
+training:
+  output_dir: "./outputs/vlm_sft"
+  num_train_epochs: 3
+  per_device_train_batch_size: 2
+  gradient_accumulation_steps: 8
+  learning_rate: 2e-5  # 全参数微调使用较低学习率
+  warmup_ratio: 0.03
+  lr_scheduler_type: "cosine"
+  
+  save_steps: 500
+  eval_steps: 500
+  logging_steps: 10
+  
+  fp16: false
+  bf16: true
+  gradient_checkpointing: true
+
+lora:
+  use_lora: false  # SFT 阶段可以选择是否使用 LoRA
+  r: 8
+  alpha: 32
+  dropout: 0.1
+
+seed: 42
