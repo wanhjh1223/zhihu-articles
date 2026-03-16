@@ -1,0 +1,3 @@
+{"conversations": [{"from": "human", "value": "你好，请介绍一下机器学习"}, {"from": "gpt", "value": "机器学习是人工智能的一个分支..."}, {"from": "human", "value": "那深度学习呢？"}, {"from": "gpt", "value": "深度学习是机器学习的子领域..."}]}
+{"messages": [{"role": "system", "content": "你是一个有用的AI助手"}, {"role": "user", "content": "什么是神经网络？"}, {"role": "assistant", "content": "神经网络是受人脑启发的计算模型..."}]}
+{"instruction": "解释什么是自然语言处理", "input": "", "output": "自然语言处理(NLP)是人工智能的一个领域..."}
