@@ -32,7 +32,7 @@
 - **创建时间**: 2026-03-19
 - **执行时间**: 每30分钟一次（每小时的12分和42分，错峰避开整点）
 - **任务内容**: 搜索自动驾驶+大模型前沿论文，深度分析后发布到GitHub仓库
-- **Cron ID**: b74ad092-b059-41d1-ba81-466eb0366e89
+- **Cron ID**: 7b034929-186b-4c37-b0e3-5b3d3bc73887
 - **关注方向**: LLM、VIT、VLA、VLM、World Model、端到端自动驾驶
 - **参考来源**: arXiv、自动驾驶之心、大模型之心、机器之心等
 - **文章要求**: 
@@ -40,20 +40,16 @@
   - 结构：背景→方法→实验→总结
   - **不得提及是AI撰写**
   - ~~添加互动问题引导评论~~ (已取消)
+- **汇报设置**: 不每次发文都汇报，仅异常/用户询问时说明
 - **GitHub仓库**: /root/.openclaw/workspace/zhihu-articles
 - **已发布文章**:
-  1. **AlphaDrive: 当强化学习遇上自动驾驶，VLM终于会"思考"了** (2025-03-19)
-     - 论文: AlphaDrive (arXiv:2503.07608)
-     - 机构: 华中科大 + 地平线
-     - 核心: GRPO强化学习 + 规划推理
-     - 文件: `2025-03-19-alphadrive-rl-reasoning-autonomous-driving.md`
-  2. **OpenDriveVLA: 当自动驾驶遇见视觉-语言-动作大模型** (2025-03-19)
-     - 论文: OpenDriveVLA (arXiv:2503.23463)
-     - 机构: 慕尼黑工业大学(TUM) + 慕尼黑大学(LMU)
-     - 核心: 层次化视觉-语言对齐 + Agent-Env-Ego交互建模
-     - 会议: AAAI 2026 Main Track
-     - 代码: https://github.com/DriveVLA/OpenDriveVLA
-     - 文件: `2025-03-19-opendrivevla-vla-end-to-end-autonomous-driving.md`
+  1. **AlphaDrive** (2025-03-19) - 华中科大+地平线，GRPO+推理
+  2. **OpenDriveVLA** (2025-03-19) - TUM+LMU，AAAI 2026，VLA端到端
+  3. **HiP-AD** (2025-03-19) - Nullmax，ICCV 2025，多粒度规划+可变形注意力
+  4. **Curious-VLA** (2025-03-19) - 北航+清华+联想，CVPR 2026，解决Narrow Policy
+  5. **MVLAD-AD** (2026-03-19) - 普渡大学，掩码VLA扩散，L2误差1.28m
+  6. **DriveVLA-W0** (2026-03-19) - 中科院自动化所，世界模型+VLA
+  7. **EvoDriveVLA** (2026-03-19) - 北大+地平线等，协作感知-规划蒸馏框架，nuScenes SOTA
 
 ## 岗位信息模板
 日报格式包含：
