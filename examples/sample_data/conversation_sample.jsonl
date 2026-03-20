@@ -1,3 +1,0 @@
-{"messages": [{"role": "system", "content": "你是一个有用的AI助手。"}, {"role": "user", "content": "你好！"}, {"role": "assistant", "content": "你好！很高兴见到你，有什么我可以帮助你的吗？"}]}
-{"messages": [{"role": "user", "content": "什么是机器学习？"}, {"role": "assistant", "content": "机器学习是人工智能的一个分支，它使计算机能够从数据中学习，而无需明确编程。通过算法和统计模型，机器学习系统可以分析数据、识别模式，并做出预测或决策。"}]}
-{"messages": [{"role": "user", "content": "解释一下深度学习。"}, {"role": "assistant", "content": "深度学习是机器学习的一个子领域，基于人工神经网络，特别是多层神经网络（深度神经网络）。它能够自动学习数据的层次化表示，在图像识别、自然语言处理等领域取得了突破性进展。"}]}

@@ -1,3 +1,0 @@
-{"image": "example1.jpg", "conversations": [{"from": "human", "value": "<image>\n这张图片里有什么？"}, {"from": "gpt", "value": "这张图片展示了一只橘色的猫咪正在沙发上睡觉，看起来很放松。"}]}
-{"image": "example2.jpg", "conversations": [{"from": "human", "value": "<image>\n描述这张风景照。"}, {"from": "gpt", "value": "这是一幅美丽的风景照片，展示了连绵的青山、清澈的湖水和蓝天白云，给人一种宁静祥和的感觉。"}]}
-{"image": "example3.jpg", "conversations": [{"from": "human", "value": "<image>\n这是什么食物？"}, {"from": "gpt", "value": "这是一碗热气腾腾的拉面，里面有面条、叉烧肉、溏心蛋、海苔和葱花，看起来非常美味。"}]}
