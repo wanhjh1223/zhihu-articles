@@ -60,8 +60,13 @@
   15. **SAMoE-VLA** (2026-03-20) - 场景自适应MoE，BEV路由，SOTA性能
   16. **AutoVLA** (2026-03-20) - UCLA，自适应快慢思考VLA，GRPO强化学习微调
   17. **IRL-VLA** (2026-03-20) - 反向强化学习世界模型VLA
-  18. **ReCogDrive** (2026-03-20) - 华科+小米，ICLR 2026，认知+扩散+DiffGRPO三阶段，NAVSIM 90.8 SOTA
-  19. **DiffVLA** (2026-03-20) - Bosch+清华，视觉语言引导扩散规划，VLA+Diffusion，NavSim v2 EPDMS 45.0
+  18. **ReflectDrive** (2026-03-20) - 离散扩散VLA
+  19. **CoIRL-AD** (2026-03-20) - 协作竞争IL+RL潜世界模型
+  20. **DiffVLA** (2026-03-20) - Bosch+清华，视觉语言引导扩散规划，VLA+Diffusion，NavSim v2 EPDMS 45.0
+  21. **ReCogDrive** (2026-03-20) - 华科+小米，ICLR 2026，认知+扩散+DiffGRPO三阶段，NAVSIM 90.8 SOTA
+  22. **SpaceDrive** (2026-03-20) - 空间感知VLM
+  23. **OmniReason** (2026-03-20) - 时间引导VLA
+  24. **Reasoning-VLA** (2026-03-20) - 兰州大学+NUS，可学习动作查询+八数据集统一训练，61倍推理加速，nuScenes/NeuroNCAP SOTA
 
 ## 岗位信息模板
 日报格式包含：
