@@ -61,6 +61,7 @@
   16. **AutoVLA** (2026-03-20) - UCLA，自适应快慢思考VLA，GRPO强化学习微调
   17. **IRL-VLA** (2026-03-20) - 反向强化学习世界模型VLA
   18. **ReCogDrive** (2026-03-20) - 华科+小米，ICLR 2026，认知+扩散+DiffGRPO三阶段，NAVSIM 90.8 SOTA
+  19. **DiffVLA** (2026-03-20) - Bosch+清华，视觉语言引导扩散规划，VLA+Diffusion，NavSim v2 EPDMS 45.0
 
 ## 岗位信息模板
 日报格式包含：
