@@ -67,6 +67,7 @@
   22. **SpaceDrive** (2026-03-20) - 空间感知VLM
   23. **OmniReason** (2026-03-20) - 时间引导VLA
   24. **Reasoning-VLA** (2026-03-20) - 兰州大学+NUS，可学习动作查询+八数据集统一训练，61倍推理加速，nuScenes/NeuroNCAP SOTA
+  25. **DriveWorld-VLA** (2026-03-20) - 北京交大+小米汽车，统一潜在空间世界建模+VLA，NAVSIMv1 PDMS 91.3 SOTA
 
 ## 岗位信息模板
 日报格式包含：
