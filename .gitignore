@@ -1,0 +1,20 @@
+# OpenClaw workspace files (should not be in article repo)
+AGENTS.md
+BOOTSTRAP.md
+IDENTITY.md
+SOUL.md
+TOOLS.md
+USER.md
+HEARTBEAT.md
+memory/
+memory/*.md
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
