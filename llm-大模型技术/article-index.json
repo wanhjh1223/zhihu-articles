@@ -1,5 +1,5 @@
 {
-  "total_articles": 22,
+  "total_articles": 23,
   "last_updated": "2026-03-24",
   "articles": [
     {"id": "001", "date": "2026-03-22", "title": "Llama-4-MoE-Architecture", "file": "001-2026-03-22-Llama-4-MoE-Architecture.md"},
@@ -23,6 +23,7 @@
     {"id": "019", "date": "2026-03-24", "title": "Training-Language-Models-to-Reason-Efficiently", "file": "019-2026-03-24-Training-Language-Models-to-Reason-Efficiently.md"},
     {"id": "020", "date": "2026-03-24", "title": "Memex-Indexed-Experience-Memory", "file": "020-2026-03-24-Memex-Indexed-Experience-Memory.md"},
     {"id": "021", "date": "2026-03-24", "title": "Revisiting-Test-Time-Scaling-o1-like-Models", "file": "021-2026-03-24-Revisiting-Test-Time-Scaling-o1-like-Models.md"},
-    {"id": "022", "date": "2026-03-24", "title": "Self-Training-Concise-Reasoning-LLM", "file": "022-2026-03-24-Self-Training-Concise-Reasoning-LLM.md"}
+    {"id": "022", "date": "2026-03-24", "title": "Self-Training-Concise-Reasoning-LLM", "file": "022-2026-03-24-Self-Training-Concise-Reasoning-LLM.md"},
+    {"id": "023", "date": "2026-03-24", "title": "Satori-Chain-of-Action-Thought-RL-Reasoning", "file": "023-2026-03-24-Satori-Chain-of-Action-Thought-RL-Reasoning.md"}
   ]
 }
