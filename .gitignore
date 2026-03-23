@@ -23,4 +23,4 @@ Thumbs.db
 projects/
 
 # Independent data processing repositories (separate from articles repo)
-medical-kg-pretrain/
+data_process/
