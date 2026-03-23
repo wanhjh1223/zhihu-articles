@@ -21,3 +21,6 @@ Thumbs.db
 
 # OpenClaw workspace directories
 projects/
+
+# Independent data processing repositories (separate from articles repo)
+medical-kg-pretrain/
