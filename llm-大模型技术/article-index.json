@@ -1,5 +1,5 @@
 {
-  "total_articles": 13,
+  "total_articles": 14,
   "last_updated": "2026-03-23",
   "articles": [
     {"id": "001", "date": "2026-03-22", "title": "Llama-4-MoE-Architecture", "file": "001-2026-03-22-Llama-4-MoE-Architecture.md"},
@@ -14,6 +14,7 @@
     {"id": "010", "date": "2026-03-23", "title": "s1-Simple-Test-Time-Scaling", "file": "010-2026-03-23-s1-Simple-Test-Time-Scaling.md"},
     {"id": "011", "date": "2026-03-23", "title": "REO-RL-推理效率优化框架", "file": "011-2026-03-23-REO-RL-推理效率优化框架.md"},
     {"id": "012", "date": "2026-03-23", "title": "O-Researcher-MultiAgent-Distillation-Agentic-RL", "file": "012-2026-03-23-O-Researcher-MultiAgent-Distillation-Agentic-RL.md"},
-    {"id": "013", "date": "2026-03-23", "title": "DecoupleSearch-Agentic-RAG-Hierarchical-Reward", "file": "013-2026-03-23-DecoupleSearch-Agentic-RAG-Hierarchical-Reward.md"}
+    {"id": "013", "date": "2026-03-23", "title": "DecoupleSearch-Agentic-RAG-Hierarchical-Reward", "file": "013-2026-03-23-DecoupleSearch-Agentic-RAG-Hierarchical-Reward.md"},
+    {"id": "014", "date": "2026-03-23", "title": "Kimi-k1.5-Scaling-RL-LLMs", "file": "014-2026-03-23-Kimi-k1.5-Scaling-RL-LLMs.md"}
   ]
 }
