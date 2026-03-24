@@ -1,5 +1,5 @@
 {
-  "total_articles": 30,
+  "total_articles": 31,
   "last_updated": "2026-03-24",
   "articles": [
     {"id": "001", "date": "2026-03-22", "title": "Llama-4-MoE-Architecture", "file": "001-2026-03-22-Llama-4-MoE-Architecture.md"},
@@ -31,6 +31,7 @@
     {"id": "027", "date": "2026-03-24", "title": "Base-Models-Reasoning-Steering-Vectors", "file": "027-2026-03-24-Base-Models-Reasoning-Steering-Vectors.md"},
     {"id": "028", "date": "2026-03-24", "title": "LLM-Reasoning-Frontiers-Survey", "file": "028-2026-03-24-LLM-Reasoning-Frontiers-Survey.md"},
     {"id": "029", "date": "2026-03-24", "title": "Intelligence-at-Edge-of-Chaos-LLM-Emergent-Intelligence", "file": "029-2026-03-24-Intelligence-at-Edge-of-Chaos-LLM-Emergent-Intelligence.md"},
-    {"id": "030", "date": "2026-03-24", "title": "PromptCoT-Mamba-Attention-Free-Reasoning", "file": "030-2026-03-24-PromptCoT-Mamba-Attention-Free-Reasoning.md"}
+    {"id": "030", "date": "2026-03-24", "title": "PromptCoT-Mamba-Attention-Free-Reasoning", "file": "030-2026-03-24-PromptCoT-Mamba-Attention-Free-Reasoning.md"},
+    {"id": "031", "date": "2026-03-24", "title": "DiMo-MultiAgent-Diverse-Thinking-Modes", "file": "031-2026-03-24-DiMo-MultiAgent-Diverse-Thinking-Modes.md"}
   ]
 }
