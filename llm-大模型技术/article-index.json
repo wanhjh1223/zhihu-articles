@@ -1,5 +1,5 @@
 {
-  "total_articles": 26,
+  "total_articles": 28,
   "last_updated": "2026-03-24",
   "articles": [
     {"id": "001", "date": "2026-03-22", "title": "Llama-4-MoE-Architecture", "file": "001-2026-03-22-Llama-4-MoE-Architecture.md"},
@@ -27,6 +27,8 @@
     {"id": "023", "date": "2026-03-24", "title": "Satori-Chain-of-Action-Thought-RL-Reasoning", "file": "023-2026-03-24-Satori-Chain-of-Action-Thought-RL-Reasoning.md"},
     {"id": "024", "date": "2026-03-24", "title": "Re2-Reasoning-with-Resolving", "file": "024-2026-03-24-Re2-Reasoning-with-Resolving.md"},
     {"id": "025", "date": "2026-03-24", "title": "Markov-States-LLM-Post-Training", "file": "025-2026-03-24-Markov-States-LLM-Post-Training.md"},
-    {"id": "026", "date": "2026-03-24", "title": "R1-Searcher-RL-Retrieval-Augmented-Reasoning", "file": "026-2026-03-24-R1-Searcher-RL-Retrieval-Augmented-Reasoning.md"}
+    {"id": "026", "date": "2026-03-24", "title": "R1-Searcher-RL-Retrieval-Augmented-Reasoning", "file": "026-2026-03-24-R1-Searcher-RL-Retrieval-Augmented-Reasoning.md"},
+    {"id": "027", "date": "2026-03-24", "title": "Base-Models-Reasoning-Steering-Vectors", "file": "027-2026-03-24-Base-Models-Reasoning-Steering-Vectors.md"},
+    {"id": "028", "date": "2026-03-24", "title": "LLM-Reasoning-Frontiers-Survey", "file": "028-2026-03-24-LLM-Reasoning-Frontiers-Survey.md"}
   ]
 }
