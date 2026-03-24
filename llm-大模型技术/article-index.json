@@ -1,6 +1,6 @@
 {
-  "total_articles": 35,
-  "last_updated": "2026-03-24",
+  "total_articles": 37,
+  "last_updated": "2026-03-25",
   "articles": [
     {"id": "001", "date": "2026-03-22", "title": "Llama-4-MoE-Architecture", "file": "001-2026-03-22-Llama-4-MoE-Architecture.md"},
     {"id": "002", "date": "2026-03-23", "title": "DeepSeek-V3.2-Sparse-Attention-RL-Agent", "file": "002-2026-03-23-DeepSeek-V3.2-Sparse-Attention-RL-Agent.md"},
@@ -36,6 +36,8 @@
     {"id": "032", "date": "2026-03-24", "title": "EPO-Explicit-Policy-Optimization-Strategic-Reasoning", "file": "032-2026-03-24-EPO-Explicit-Policy-Optimization-Strategic-Reasoning.md"},
     {"id": "033", "date": "2026-03-24", "title": "SWEET-RL-MultiTurn-Collaborative-RL", "file": "033-2026-03-24-SWEET-RL-MultiTurn-Collaborative-RL.md"},
     {"id": "034", "date": "2026-03-24", "title": "MARS-Efficient-MultiAgent-Collaboration", "file": "034-2026-03-24-MARS-Efficient-MultiAgent-Collaboration.md"},
-    {"id": "035", "date": "2026-03-24", "title": "ReSearch-RL-Reasoning-Search", "file": "035-2026-03-24-ReSearch-RL-Reasoning-Search.md"}
+    {"id": "035", "date": "2026-03-24", "title": "ReSearch-RL-Reasoning-Search", "file": "035-2026-03-24-ReSearch-RL-Reasoning-Search.md"},
+    {"id": "036", "date": "2026-03-25", "title": "LIMO-Less-is-More-for-Reasoning", "file": "036-2026-03-25-LIMO-Less-is-More-for-Reasoning.md"},
+    {"id": "037", "date": "2026-03-25", "title": "Chain-of-Draft-Efficient-Reasoning", "file": "037-2026-03-25-Chain-of-Draft-Efficient-Reasoning.md"}
   ]
 }
