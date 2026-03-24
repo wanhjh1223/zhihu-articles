@@ -1,5 +1,5 @@
 {
-  "total_articles": 33,
+  "total_articles": 35,
   "last_updated": "2026-03-24",
   "articles": [
     {"id": "001", "date": "2026-03-22", "title": "Llama-4-MoE-Architecture", "file": "001-2026-03-22-Llama-4-MoE-Architecture.md"},
@@ -34,6 +34,8 @@
     {"id": "030", "date": "2026-03-24", "title": "PromptCoT-Mamba-Attention-Free-Reasoning", "file": "030-2026-03-24-PromptCoT-Mamba-Attention-Free-Reasoning.md"},
     {"id": "031", "date": "2026-03-24", "title": "DiMo-MultiAgent-Diverse-Thinking-Modes", "file": "031-2026-03-24-DiMo-MultiAgent-Diverse-Thinking-Modes.md"},
     {"id": "032", "date": "2026-03-24", "title": "EPO-Explicit-Policy-Optimization-Strategic-Reasoning", "file": "032-2026-03-24-EPO-Explicit-Policy-Optimization-Strategic-Reasoning.md"},
-    {"id": "033", "date": "2026-03-24", "title": "SWEET-RL-MultiTurn-Collaborative-RL", "file": "033-2026-03-24-SWEET-RL-MultiTurn-Collaborative-RL.md"}
+    {"id": "033", "date": "2026-03-24", "title": "SWEET-RL-MultiTurn-Collaborative-RL", "file": "033-2026-03-24-SWEET-RL-MultiTurn-Collaborative-RL.md"},
+    {"id": "034", "date": "2026-03-24", "title": "MARS-Efficient-MultiAgent-Collaboration", "file": "034-2026-03-24-MARS-Efficient-MultiAgent-Collaboration.md"},
+    {"id": "035", "date": "2026-03-24", "title": "ReSearch-RL-Reasoning-Search", "file": "035-2026-03-24-ReSearch-RL-Reasoning-Search.md"}
   ]
 }
