@@ -1,5 +1,5 @@
 {
-  "total_articles": 39,
+  "total_articles": 40,
   "last_updated": "2026-03-25",
   "articles": [
     {"id": "001", "date": "2026-03-22", "title": "Llama-4-MoE-Architecture", "file": "001-2026-03-22-Llama-4-MoE-Architecture.md"},
@@ -40,6 +40,7 @@
     {"id": "036", "date": "2026-03-25", "title": "LIMO-Less-is-More-for-Reasoning", "file": "036-2026-03-25-LIMO-Less-is-More-for-Reasoning.md"},
     {"id": "037", "date": "2026-03-25", "title": "Chain-of-Draft-Efficient-Reasoning", "file": "037-2026-03-25-Chain-of-Draft-Efficient-Reasoning.md"},
     {"id": "038", "date": "2026-03-25", "title": "Draft-Thinking-Efficient-Reasoning", "file": "038-2026-03-25-Draft-Thinking-Efficient-Reasoning.md"},
-    {"id": "039", "date": "2026-03-25", "title": "TinyR1-Branch-Merge-Distillation", "file": "039-2026-03-25-TinyR1-Branch-Merge-Distillation.md"}
+    {"id": "039", "date": "2026-03-25", "title": "TinyR1-Branch-Merge-Distillation", "file": "039-2026-03-25-TinyR1-Branch-Merge-Distillation.md"},
+    {"id": "040", "date": "2026-03-25", "title": "RAGentA-MultiAgent-AttributedQA", "file": "040-2026-03-25-RAGentA-MultiAgent-AttributedQA.md"}
   ]
 }
