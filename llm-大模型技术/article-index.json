@@ -1,6 +1,6 @@
 {
-  "total_articles": 51,
-  "last_updated": "2026-03-25",
+  "total_articles": 55,
+  "last_updated": "2026-03-26",
   "articles": [
     {"id": "001", "date": "2026-03-22", "title": "Llama-4-MoE-Architecture", "file": "001-2026-03-22-Llama-4-MoE-Architecture.md"},
     {"id": "002", "date": "2026-03-23", "title": "DeepSeek-V3.2-Sparse-Attention-RL-Agent", "file": "002-2026-03-23-DeepSeek-V3.2-Sparse-Attention-RL-Agent.md"},
@@ -52,6 +52,10 @@
     {"id": "048", "date": "2026-03-25", "title": "MAGRPO-MultiAgent-RL-Collaboration", "file": "048-2026-03-25-MAGRPO-MultiAgent-RL-Collaboration.md"},
     {"id": "049", "date": "2026-03-25", "title": "SpeCache-Speculative-KV-Caching", "file": "049-2026-03-25-SpeCache-Speculative-KV-Caching.md"},
     {"id": "050", "date": "2026-03-25", "title": "Byte-Latent-Transformer-BLT", "file": "050-2026-03-25-Byte-Latent-Transformer-BLT.md"},
-    {"id": "051", "date": "2026-03-25", "title": "Reasoning-Learn-Latent-Thoughts", "file": "051-2026-03-25-Reasoning-Learn-Latent-Thoughts.md"}
+    {"id": "051", "date": "2026-03-25", "title": "Reasoning-Learn-Latent-Thoughts", "file": "051-2026-03-25-Reasoning-Learn-Latent-Thoughts.md"},
+    {"id": "052", "date": "2026-03-25", "title": "DeepResearcher-RealWorld-RL-DeepResearch", "file": "052-2026-03-25-DeepResearcher-RealWorld-RL-DeepResearch.md"},
+    {"id": "053", "date": "2026-03-25", "title": "Soft-Thinking-Continuous-Concept-Space", "file": "053-2026-03-25-Soft-Thinking-Continuous-Concept-Space.md"},
+    {"id": "054", "date": "2026-03-25", "title": "Small-Language-Models-Future-Agentic-AI", "file": "054-2026-03-25-Small-Language-Models-Future-Agentic-AI.md"},
+    {"id": "055", "date": "2026-03-26", "title": "Chain-of-Agents-Multi-Agent-Long-Context", "file": "055-2026-03-26-Chain-of-Agents-Multi-Agent-Long-Context.md"}
   ]
 }

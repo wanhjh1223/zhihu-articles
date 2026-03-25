@@ -1,1 +1,0 @@
-: 2025-03-25-LIMO-Less-is-More-for-Reasoning.md
