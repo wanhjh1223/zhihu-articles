@@ -1,5 +1,5 @@
 {
-  "total_articles": 48,
+  "total_articles": 51,
   "last_updated": "2026-03-25",
   "articles": [
     {"id": "001", "date": "2026-03-22", "title": "Llama-4-MoE-Architecture", "file": "001-2026-03-22-Llama-4-MoE-Architecture.md"},
@@ -49,6 +49,9 @@
     {"id": "045", "date": "2026-03-25", "title": "MCP-Model-Context-Protocol-Security-Survey", "file": "045-2026-03-25-MCP-Model-Context-Protocol-Security-Survey.md"},
     {"id": "046", "date": "2026-03-25", "title": "AVR-Adaptive-VLM-Routing-Computer-Use-Agent", "file": "046-2026-03-25-AVR-Adaptive-VLM-Routing-Computer-Use-Agent.md"},
     {"id": "047", "date": "2026-03-25", "title": "ReaRAG-Knowledge-guided-Reasoning-RAG", "file": "047-2026-03-25-ReaRAG-Knowledge-guided-Reasoning-RAG.md"},
-    {"id": "048", "date": "2026-03-25", "title": "MAGRPO-MultiAgent-RL-Collaboration", "file": "048-2026-03-25-MAGRPO-MultiAgent-RL-Collaboration.md"}
+    {"id": "048", "date": "2026-03-25", "title": "MAGRPO-MultiAgent-RL-Collaboration", "file": "048-2026-03-25-MAGRPO-MultiAgent-RL-Collaboration.md"},
+    {"id": "049", "date": "2026-03-25", "title": "SpeCache-Speculative-KV-Caching", "file": "049-2026-03-25-SpeCache-Speculative-KV-Caching.md"},
+    {"id": "050", "date": "2026-03-25", "title": "Byte-Latent-Transformer-BLT", "file": "050-2026-03-25-Byte-Latent-Transformer-BLT.md"},
+    {"id": "051", "date": "2026-03-25", "title": "Reasoning-Learn-Latent-Thoughts", "file": "051-2026-03-25-Reasoning-Learn-Latent-Thoughts.md"}
   ]
 }
