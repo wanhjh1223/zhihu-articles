@@ -1,5 +1,5 @@
 {
-  "total_articles": 59,
+  "total_articles": 62,
   "last_updated": "2026-03-26",
   "articles": [
     {"id": "001", "date": "2026-03-22", "title": "Llama-4-MoE-Architecture", "file": "001-2026-03-22-Llama-4-MoE-Architecture.md"},
@@ -60,6 +60,9 @@
     {"id": "056", "date": "2026-03-26", "title": "Context-Cartography-Structured-Governance", "file": "056-2026-03-26-Context-Cartography-Structured-Governance.md"},
     {"id": "057", "date": "2026-03-26", "title": "Qwen3-VL-Native-256K-Multimodal", "file": "057-2026-03-26-Qwen3-VL-Native-256K-Multimodal.md"},
     {"id": "058", "date": "2026-03-26", "title": "VLM-R1-视觉语言模型强化学习", "file": "058-2026-03-26-VLM-R1-视觉语言模型强化学习.md"},
-    {"id": "059", "date": "2026-03-26", "title": "Open-Reasoner-Zero-极简PPO高效推理训练", "file": "059-2026-03-26-Open-Reasoner-Zero-极简PPO高效推理训练.md"}
+    {"id": "059", "date": "2026-03-26", "title": "Open-Reasoner-Zero-极简PPO高效推理训练", "file": "059-2026-03-26-Open-Reasoner-Zero-极简PPO高效推理训练.md"},
+    {"id": "060", "date": "2026-03-26", "title": "Kimi-K2.5-Native-Multimodal-Agent-Swarm", "file": "060-2026-03-26-Kimi-K2.5-Native-Multimodal-Agent-Swarm.md"},
+    {"id": "061", "date": "2026-03-26", "title": "Vision-R1-多模态推理强化学习", "file": "061-2026-03-26-Vision-R1-多模态推理强化学习.md"},
+    {"id": "062", "date": "2026-03-26", "title": "Gemini-2.5-Reasoning-Multimodal-LongContext", "file": "062-2026-03-26-Gemini-2.5-Reasoning-Multimodal-LongContext.md"}
   ]
 }
