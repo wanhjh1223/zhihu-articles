@@ -1,5 +1,5 @@
 {
-  "total_articles": 45,
+  "total_articles": 47,
   "last_updated": "2026-03-25",
   "articles": [
     {"id": "001", "date": "2026-03-22", "title": "Llama-4-MoE-Architecture", "file": "001-2026-03-22-Llama-4-MoE-Architecture.md"},
@@ -46,6 +46,8 @@
     {"id": "042", "date": "2026-03-25", "title": "CoRAG-Chain-of-Retrieval-Augmented-Generation", "file": "042-2026-03-25-CoRAG-Chain-of-Retrieval-Augmented-Generation.md"},
     {"id": "043", "date": "2026-03-25", "title": "RARE-Retrieval-Augmented-Reasoning-Modeling", "file": "043-2026-03-25-RARE-Retrieval-Augmented-Reasoning-Modeling.md"},
     {"id": "044", "date": "2026-03-25", "title": "Cognitive-Behaviors-Self-Improving-Reasoners", "file": "044-2026-03-25-Cognitive-Behaviors-Self-Improving-Reasoners.md"},
-    {"id": "045", "date": "2026-03-25", "title": "MCP-Model-Context-Protocol-Security-Survey", "file": "045-2026-03-25-MCP-Model-Context-Protocol-Security-Survey.md"}
+    {"id": "045", "date": "2026-03-25", "title": "MCP-Model-Context-Protocol-Security-Survey", "file": "045-2026-03-25-MCP-Model-Context-Protocol-Security-Survey.md"},
+    {"id": "046", "date": "2026-03-25", "title": "AVR-Adaptive-VLM-Routing-Computer-Use-Agent", "file": "046-2026-03-25-AVR-Adaptive-VLM-Routing-Computer-Use-Agent.md"},
+    {"id": "047", "date": "2026-03-25", "title": "ReaRAG-Knowledge-guided-Reasoning-RAG", "file": "047-2026-03-25-ReaRAG-Knowledge-guided-Reasoning-RAG.md"}
   ]
 }
