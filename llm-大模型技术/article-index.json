@@ -1,5 +1,5 @@
 {
-  "total_articles": 41,
+  "total_articles": 43,
   "last_updated": "2026-03-25",
   "articles": [
     {"id": "001", "date": "2026-03-22", "title": "Llama-4-MoE-Architecture", "file": "001-2026-03-22-Llama-4-MoE-Architecture.md"},
@@ -42,6 +42,8 @@
     {"id": "038", "date": "2026-03-25", "title": "Draft-Thinking-Efficient-Reasoning", "file": "038-2026-03-25-Draft-Thinking-Efficient-Reasoning.md"},
     {"id": "039", "date": "2026-03-25", "title": "TinyR1-Branch-Merge-Distillation", "file": "039-2026-03-25-TinyR1-Branch-Merge-Distillation.md"},
     {"id": "040", "date": "2026-03-25", "title": "RAGentA-MultiAgent-AttributedQA", "file": "040-2026-03-25-RAGentA-MultiAgent-AttributedQA.md"},
-    {"id": "041", "date": "2026-03-25", "title": "Agent-Models-Internalizing-CoA", "file": "041-2026-03-25-Agent-Models-Internalizing-CoA.md"}
+    {"id": "041", "date": "2026-03-25", "title": "Agent-Models-Internalizing-CoA", "file": "041-2026-03-25-Agent-Models-Internalizing-CoA.md"},
+    {"id": "042", "date": "2026-03-25", "title": "CoRAG-Chain-of-Retrieval-Augmented-Generation", "file": "042-2026-03-25-CoRAG-Chain-of-Retrieval-Augmented-Generation.md"},
+    {"id": "043", "date": "2026-03-25", "title": "RARE-Retrieval-Augmented-Reasoning-Modeling", "file": "043-2026-03-25-RARE-Retrieval-Augmented-Reasoning-Modeling.md"}
   ]
 }
