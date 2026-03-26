@@ -1,6 +1,6 @@
 {
-  "total_articles": 72,
-  "last_updated": "2026-03-26",
+  "total_articles": 79,
+  "last_updated": "2026-03-27",
   "articles": [
     {"id": "001", "date": "2026-03-22", "title": "Llama-4-MoE-Architecture", "file": "001-2026-03-22-Llama-4-MoE-Architecture.md"},
     {"id": "002", "date": "2026-03-23", "title": "DeepSeek-V3.2-Sparse-Attention-RL-Agent", "file": "002-2026-03-23-DeepSeek-V3.2-Sparse-Attention-RL-Agent.md"},
@@ -73,6 +73,13 @@
     {"id": "069", "date": "2026-03-26", "title": "AVR-Adaptive-VLM-Routing-Computer-Use-Agents", "file": "069-2026-03-26-AVR-Adaptive-VLM-Routing-Computer-Use-Agents.md"},
     {"id": "070", "date": "2026-03-26", "title": "ConFu-Contemplate-Future-Speculative-Decoding", "file": "070-2026-03-26-ConFu-Contemplate-Future-Speculative-Decoding.md"},
     {"id": "071", "date": "2026-03-26", "title": "Vision-Zero-VLM-Self-Play", "file": "071-2026-03-26-Vision-Zero-VLM-Self-Play.md"},
-    {"id": "072", "date": "2026-03-26", "title": "Video-R1-Video-Reasoning-MLLM", "file": "072-2026-03-26-Video-R1-Video-Reasoning-MLLM.md"}
+    {"id": "072", "date": "2026-03-26", "title": "Video-R1-Video-Reasoning-MLLM", "file": "072-2026-03-26-Video-R1-Video-Reasoning-MLLM.md"},
+    {"id": "073", "date": "2026-03-26", "title": "MM-DeepResearch-多模态智能搜索基线", "file": "073-2026-03-26-MM-DeepResearch-多模态智能搜索基线.md"},
+    {"id": "074", "date": "2026-03-26", "title": "SPIRAL-Self-Play-Reasoning-MultiAgent-RL", "file": "074-2026-03-26-SPIRAL-Self-Play-Reasoning-MultiAgent-RL.md"},
+    {"id": "075", "date": "2026-03-26", "title": "WorldSense-Omnimodal-RealWorld-Benchmark", "file": "075-2026-03-26-WorldSense-Omnimodal-RealWorld-Benchmark.md"},
+    {"id": "076", "date": "2026-03-26", "title": "Stop-Overthinking-Efficient-Reasoning-Survey", "file": "076-2026-03-26-Stop-Overthinking-Efficient-Reasoning-Survey.md"},
+    {"id": "077", "date": "2026-03-26", "title": "SCoT-Speculative-Chain-of-Thought", "file": "077-2026-03-26-SCoT-Speculative-Chain-of-Thought.md"},
+    {"id": "078", "date": "2026-03-26", "title": "DeepSeekMath-V2-Self-Verifiable-Mathematical-Reasoning", "file": "078-2026-03-26-DeepSeekMath-V2-Self-Verifiable-Mathematical-Reasoning.md"},
+    {"id": "079", "date": "2026-03-27", "title": "FlowRL-奖励分布匹配强化学习", "file": "079-2026-03-27-FlowRL-奖励分布匹配强化学习.md"}
   ]
 }
