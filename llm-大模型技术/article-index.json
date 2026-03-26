@@ -1,5 +1,5 @@
 {
-  "total_articles": 79,
+  "total_articles": 81,
   "last_updated": "2026-03-27",
   "articles": [
     {"id": "001", "date": "2026-03-22", "title": "Llama-4-MoE-Architecture", "file": "001-2026-03-22-Llama-4-MoE-Architecture.md"},
@@ -80,6 +80,8 @@
     {"id": "076", "date": "2026-03-26", "title": "Stop-Overthinking-Efficient-Reasoning-Survey", "file": "076-2026-03-26-Stop-Overthinking-Efficient-Reasoning-Survey.md"},
     {"id": "077", "date": "2026-03-26", "title": "SCoT-Speculative-Chain-of-Thought", "file": "077-2026-03-26-SCoT-Speculative-Chain-of-Thought.md"},
     {"id": "078", "date": "2026-03-26", "title": "DeepSeekMath-V2-Self-Verifiable-Mathematical-Reasoning", "file": "078-2026-03-26-DeepSeekMath-V2-Self-Verifiable-Mathematical-Reasoning.md"},
-    {"id": "079", "date": "2026-03-27", "title": "FlowRL-奖励分布匹配强化学习", "file": "079-2026-03-27-FlowRL-奖励分布匹配强化学习.md"}
+    {"id": "079", "date": "2026-03-27", "title": "FlowRL-奖励分布匹配强化学习", "file": "079-2026-03-27-FlowRL-奖励分布匹配强化学习.md"},
+    {"id": "080", "date": "2026-03-27", "title": "MARCH-多智能体幻觉检测框架", "file": "080-2026-03-27-MARCH-多智能体幻觉检测框架.md"},
+    {"id": "081", "date": "2026-03-27", "title": "Gated-Attention-NeurIPS-Best-Paper", "file": "081-2026-03-27-Gated-Attention-NeurIPS-Best-Paper.md"}
   ]
 }
