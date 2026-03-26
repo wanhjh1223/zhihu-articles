@@ -1,5 +1,5 @@
 {
-  "total_articles": 64,
+  "total_articles": 68,
   "last_updated": "2026-03-26",
   "articles": [
     {"id": "001", "date": "2026-03-22", "title": "Llama-4-MoE-Architecture", "file": "001-2026-03-22-Llama-4-MoE-Architecture.md"},
@@ -65,6 +65,10 @@
     {"id": "061", "date": "2026-03-26", "title": "Vision-R1-多模态推理强化学习", "file": "061-2026-03-26-Vision-R1-多模态推理强化学习.md"},
     {"id": "062", "date": "2026-03-26", "title": "Gemini-2.5-Reasoning-Multimodal-LongContext", "file": "062-2026-03-26-Gemini-2.5-Reasoning-Multimodal-LongContext.md"},
     {"id": "063", "date": "2026-03-26", "title": "Qwen3-VL-Technical-Report-Native-256K-Multimodal", "file": "063-2026-03-26-Qwen3-VL-Technical-Report-Native-256K-Multimodal.md"},
-    {"id": "064", "date": "2026-03-26", "title": "ReMA-Meta-thinking-MARL", "file": "064-2026-03-26-ReMA-Meta-thinking-MARL.md"}
+    {"id": "064", "date": "2026-03-26", "title": "ReMA-Meta-thinking-MARL", "file": "064-2026-03-26-ReMA-Meta-thinking-MARL.md"},
+    {"id": "065", "date": "2026-03-26", "title": "TLT-Adaptive-Drafter-Reasoning-RL", "file": "065-2026-03-26-TLT-Adaptive-Drafter-Reasoning-RL.md"},
+    {"id": "066", "date": "2026-03-26", "title": "Qwen3-Omni-Native-Omnimodal-End-to-End", "file": "066-2026-03-26-Qwen3-Omni-Native-Omnimodal-End-to-End.md"},
+    {"id": "067", "date": "2026-03-26", "title": "Doubao-OS-Agent-UI-TARS-Native-Multimodal", "file": "067-2026-03-26-Doubao-OS-Agent-UI-TARS-Native-Multimodal.md"},
+    {"id": "068", "date": "2026-03-26", "title": "AutoThink-Adaptive-Reasoning-R1-Style", "file": "068-2026-03-26-AutoThink-Adaptive-Reasoning-R1-Style.md"}
   ]
 }
