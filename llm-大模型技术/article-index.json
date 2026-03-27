@@ -1,5 +1,5 @@
 {
-  "total_articles": 95,
+  "total_articles": 96,
   "last_updated": "2026-03-28",
   "articles": [
     {"id": "001", "date": "2026-03-22", "title": "Llama-4-MoE-Architecture", "file": "001-2026-03-22-Llama-4-MoE-Architecture.md"},
@@ -96,6 +96,7 @@
     {"id": "092", "date": "2026-03-27", "title": "ELLMER-具身大模型机器人框架", "file": "092-2026-03-27-ELLMER-具身大模型机器人框架.md"},
     {"id": "093", "date": "2026-03-28", "title": "Phi-4-Multimodal-Mixture-of-LoRAs-小模型多模态突破", "file": "093-2026-03-28-Phi-4-Multimodal-Mixture-of-LoRAs-小模型多模态突破.md"},
     {"id": "094", "date": "2026-03-28", "title": "Gated-Attention-NeurIPS-Best-Paper", "file": "094-2026-03-28-Gated-Attention-NeurIPS-Best-Paper.md"},
-    {"id": "095", "date": "2026-03-28", "title": "TON-Selective-Reasoning-VLM-NeurIPS2025", "file": "095-2026-03-28-TON-Selective-Reasoning-VLM-NeurIPS2025.md"}
+    {"id": "095", "date": "2026-03-28", "title": "TON-Selective-Reasoning-VLM-NeurIPS2025", "file": "095-2026-03-28-TON-Selective-Reasoning-VLM-NeurIPS2025.md"},
+    {"id": "096", "date": "2026-03-28", "title": "Scaling-Test-time-Compute-LLM-Agents", "file": "096-2026-03-28-Scaling-Test-time-Compute-LLM-Agents.md"}
   ]
 }
