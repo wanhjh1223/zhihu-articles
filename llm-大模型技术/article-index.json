@@ -1,6 +1,6 @@
 {
-  "total_articles": 109,
-  "last_updated": "2026-03-28",
+  "total_articles": 110,
+  "last_updated": "2026-03-29",
   "articles": [
     {"id": "001", "date": "2026-03-22", "title": "Llama-4-MoE-Architecture", "file": "001-2026-03-22-Llama-4-MoE-Architecture.md"},
     {"id": "002", "date": "2026-03-23", "title": "DeepSeek-V3.2-Sparse-Attention-RL-Agent", "file": "002-2026-03-23-DeepSeek-V3.2-Sparse-Attention-RL-Agent.md"},
@@ -110,6 +110,8 @@
     {"id": "106", "date": "2026-03-28", "title": "HyperGraphRAG-超图结构知识表示的检索增强生成新范式", "file": "106-2026-03-28-HyperGraphRAG-超图结构知识表示的检索增强生成新范式.md"},
     {"id": "107", "date": "2026-03-28", "title": "ReSearch-强化学习推理搜索融合框架", "file": "107-2026-03-28-ReSearch-强化学习推理搜索融合框架.md"},
     {"id": "108", "date": "2026-03-28", "title": "Non-Attention-LLM-无注意力超长上下文架构革新", "file": "108-2026-03-28-Non-Attention-LLM-无注意力超长上下文架构革新.md"},
-    {"id": "109", "date": "2026-03-28", "title": "MALT-多智能体大语言模型训练框架", "file": "109-2026-03-28-MALT-多智能体大语言模型训练框架.md"}
+    {"id": "109", "date": "2026-03-28", "title": "MALT-多智能体大语言模型训练框架", "file": "109-2026-03-28-MALT-多智能体大语言模型训练框架.md"},
+    {"id": "110", "date": "2026-03-28", "title": "RAG-KG-IL-多智能体混合框架RAG知识图谱增量学习", "file": "110-2026-03-28-RAG-KG-IL-多智能体混合框架RAG知识图谱增量学习.md"},
+    {"id": "111", "date": "2026-03-29", "title": "Forgetting-Transformer-遗忘机制Transformer架构革新", "file": "111-2026-03-29-Forgetting-Transformer-遗忘机制Transformer架构革新.md"}
   ]
 }
