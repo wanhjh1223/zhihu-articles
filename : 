@@ -1,0 +1,10 @@
+: 创建目标目录
+mkdir -p "llm-大模型技术"
+
+# 检查git状态
+git status
+
+# 创建文件
+touch "llm-大模型技术/001-2026-03-27-Vision-DeepResearch深度解析.md"
+
+echo "目录和文件创建完成"

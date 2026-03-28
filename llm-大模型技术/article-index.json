@@ -1,5 +1,5 @@
 {
-  "total_articles": 112,
+  "total_articles": 114,
   "last_updated": "2026-03-29",
   "articles": [
     {"id": "001", "date": "2026-03-22", "title": "Llama-4-MoE-Architecture", "file": "001-2026-03-22-Llama-4-MoE-Architecture.md"},
@@ -113,6 +113,8 @@
     {"id": "109", "date": "2026-03-28", "title": "MALT-多智能体大语言模型训练框架", "file": "109-2026-03-28-MALT-多智能体大语言模型训练框架.md"},
     {"id": "110", "date": "2026-03-28", "title": "RAG-KG-IL-多智能体混合框架RAG知识图谱增量学习", "file": "110-2026-03-28-RAG-KG-IL-多智能体混合框架RAG知识图谱增量学习.md"},
     {"id": "111", "date": "2026-03-29", "title": "Forgetting-Transformer-遗忘机制Transformer架构革新", "file": "111-2026-03-29-Forgetting-Transformer-遗忘机制Transformer架构革新.md"},
-    {"id": "112", "date": "2026-03-29", "title": "LLaDA-扩散语言模型挑战自回归范式", "file": "112-2026-03-29-LLaDA-扩散语言模型挑战自回归范式.md"}
+    {"id": "112", "date": "2026-03-29", "title": "LLaDA-扩散语言模型挑战自回归范式", "file": "112-2026-03-29-LLaDA-扩散语言模型挑战自回归范式.md"},
+    {"id": "113", "date": "2026-03-29", "title": "ViGoRL-视觉落地强化学习", "file": "113-2026-03-29-ViGoRL-视觉落地强化学习.md"},
+    {"id": "114", "date": "2026-03-29", "title": "Search-R1-RL搜索推理融合框架", "file": "114-2026-03-29-Search-R1-RL搜索推理融合框架.md"}
   ]
 }
