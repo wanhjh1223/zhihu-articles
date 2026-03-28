@@ -1,5 +1,5 @@
 {
-  "total_articles": 106,
+  "total_articles": 109,
   "last_updated": "2026-03-28",
   "articles": [
     {"id": "001", "date": "2026-03-22", "title": "Llama-4-MoE-Architecture", "file": "001-2026-03-22-Llama-4-MoE-Architecture.md"},
@@ -107,6 +107,9 @@
     {"id": "103", "date": "2026-03-28", "title": "Memory-R1-RL记忆增强大模型智能体框架", "file": "103-2026-03-28-Memory-R1-RL记忆增强大模型智能体框架.md"},
     {"id": "104", "date": "2026-03-28", "title": "MC-Search-多模态Agentic-RAG-长推理链基准", "file": "104-2026-03-28-MC-Search-多模态Agentic-RAG-长推理链基准.md"},
     {"id": "105", "date": "2026-03-28", "title": "Reasoning-Beyond-Limits-LLM前沿突破与开放问题深度解析", "file": "105-2026-03-28-Reasoning-Beyond-Limits-LLM前沿突破与开放问题深度解析.md"},
-    {"id": "106", "date": "2026-03-28", "title": "HyperGraphRAG-超图结构知识表示的检索增强生成新范式", "file": "106-2026-03-28-HyperGraphRAG-超图结构知识表示的检索增强生成新范式.md"}
+    {"id": "106", "date": "2026-03-28", "title": "HyperGraphRAG-超图结构知识表示的检索增强生成新范式", "file": "106-2026-03-28-HyperGraphRAG-超图结构知识表示的检索增强生成新范式.md"},
+    {"id": "107", "date": "2026-03-28", "title": "ReSearch-强化学习推理搜索融合框架", "file": "107-2026-03-28-ReSearch-强化学习推理搜索融合框架.md"},
+    {"id": "108", "date": "2026-03-28", "title": "Non-Attention-LLM-无注意力超长上下文架构革新", "file": "108-2026-03-28-Non-Attention-LLM-无注意力超长上下文架构革新.md"},
+    {"id": "109", "date": "2026-03-28", "title": "MALT-多智能体大语言模型训练框架", "file": "109-2026-03-28-MALT-多智能体大语言模型训练框架.md"}
   ]
 }
