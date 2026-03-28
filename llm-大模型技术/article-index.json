@@ -1,5 +1,5 @@
 {
-  "total_articles": 96,
+  "total_articles": 98,
   "last_updated": "2026-03-28",
   "articles": [
     {"id": "001", "date": "2026-03-22", "title": "Llama-4-MoE-Architecture", "file": "001-2026-03-22-Llama-4-MoE-Architecture.md"},
@@ -97,6 +97,8 @@
     {"id": "093", "date": "2026-03-28", "title": "Phi-4-Multimodal-Mixture-of-LoRAs-小模型多模态突破", "file": "093-2026-03-28-Phi-4-Multimodal-Mixture-of-LoRAs-小模型多模态突破.md"},
     {"id": "094", "date": "2026-03-28", "title": "Gated-Attention-NeurIPS-Best-Paper", "file": "094-2026-03-28-Gated-Attention-NeurIPS-Best-Paper.md"},
     {"id": "095", "date": "2026-03-28", "title": "TON-Selective-Reasoning-VLM-NeurIPS2025", "file": "095-2026-03-28-TON-Selective-Reasoning-VLM-NeurIPS2025.md"},
-    {"id": "096", "date": "2026-03-28", "title": "Scaling-Test-time-Compute-LLM-Agents", "file": "096-2026-03-28-Scaling-Test-time-Compute-LLM-Agents.md"}
+    {"id": "096", "date": "2026-03-28", "title": "Scaling-Test-time-Compute-LLM-Agents", "file": "096-2026-03-28-Scaling-Test-time-Compute-LLM-Agents.md"},
+    {"id": "097", "date": "2026-03-28", "title": "BLT-Byte-Latent-Transformer-字节级无词表LLM架构突破", "file": "097-2026-03-28-BLT-Byte-Latent-Transformer-字节级无词表LLM架构突破.md"},
+    {"id": "098", "date": "2026-03-28", "title": "LLM推理前沿综述-Inference-Scaling-Learning-Reasoning-Agentic-Systems", "file": "098-2026-03-28-LLM推理前沿综述-Inference-Scaling-Learning-Reasoning-Agentic-Systems.md"}
   ]
 }
