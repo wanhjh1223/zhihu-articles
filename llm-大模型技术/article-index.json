@@ -1,5 +1,5 @@
 {
-  "total_articles": 114,
+  "total_articles": 125,
   "last_updated": "2026-03-29",
   "articles": [
     {"id": "001", "date": "2026-03-22", "title": "Llama-4-MoE-Architecture", "file": "001-2026-03-22-Llama-4-MoE-Architecture.md"},
@@ -115,6 +115,17 @@
     {"id": "111", "date": "2026-03-29", "title": "Forgetting-Transformer-遗忘机制Transformer架构革新", "file": "111-2026-03-29-Forgetting-Transformer-遗忘机制Transformer架构革新.md"},
     {"id": "112", "date": "2026-03-29", "title": "LLaDA-扩散语言模型挑战自回归范式", "file": "112-2026-03-29-LLaDA-扩散语言模型挑战自回归范式.md"},
     {"id": "113", "date": "2026-03-29", "title": "ViGoRL-视觉落地强化学习", "file": "113-2026-03-29-ViGoRL-视觉落地强化学习.md"},
-    {"id": "114", "date": "2026-03-29", "title": "Search-R1-RL搜索推理融合框架", "file": "114-2026-03-29-Search-R1-RL搜索推理融合框架.md"}
+    {"id": "114", "date": "2026-03-29", "title": "Search-R1-RL搜索推理融合框架", "file": "114-2026-03-29-Search-R1-RL搜索推理融合框架.md"},
+    {"id": "115", "date": "2026-03-29", "title": "PPPO前缀优化强化学习突破LLM推理效率", "file": "115-2026-03-29-PPPO前缀优化强化学习突破LLM推理效率.md"},
+    {"id": "116", "date": "2026-03-29", "title": "ConceptMoE-自适应Token概念压缩与隐式计算分配", "file": "116-2026-03-29-ConceptMoE-自适应Token概念压缩与隐式计算分配.md"},
+    {"id": "117", "date": "2026-03-29", "title": "FastTTS-边缘设备推理时计算加速系统深度解析", "file": "117-2026-03-29-FastTTS-边缘设备推理时计算加速系统深度解析.md"},
+    {"id": "118", "date": "2026-03-29", "title": "R1-Onevision-跨模态形式化多模态推理", "file": "118-2026-03-29-R1-Onevision-跨模态形式化多模态推理.md"},
+    {"id": "119", "date": "2026-03-29", "title": "Test-Time-Learning-TLM-测试时学习范式革新", "file": "119-2026-03-29-Test-Time-Learning-TLM-测试时学习范式革新.md"},
+    {"id": "120", "date": "2026-03-29", "title": "MRT元强化微调优化测试时计算", "file": "120-2026-03-29-MRT元强化微调优化测试时计算.md"},
+    {"id": "121", "date": "2026-03-29", "title": "多尝试强化学习-Multi-Attempt-RL-从失败中学习提升推理", "file": "121-2026-03-29-多尝试强化学习-Multi-Attempt-RL-从失败中学习提升推理.md"},
+    {"id": "122", "date": "2026-03-29", "title": "Mamba-3-State-Space-Model-Inference-Efficiency", "file": "122-2026-03-29-Mamba-3-State-Space-Model-Inference-Efficiency.md"},
+    {"id": "123", "date": "2026-03-29", "title": "TTSR-测试时自反思持续推理改进框架", "file": "123-2026-03-29-TTSR-测试时自反思持续推理改进框架.md"},
+    {"id": "124", "date": "2026-03-29", "title": "HM-RAG-分层多智能体多模态检索增强生成", "file": "124-2026-03-29-HM-RAG-分层多智能体多模态检索增强生成.md"},
+    {"id": "125", "date": "2026-03-29", "title": "大模型自我改进技术全景深度解析", "file": "125-2026-03-29-大模型自我改进技术全景深度解析.md"}
   ]
 }
