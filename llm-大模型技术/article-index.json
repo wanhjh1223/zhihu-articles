@@ -1,6 +1,6 @@
 {
-  "total_articles": 125,
-  "last_updated": "2026-03-29",
+  "total_articles": 129,
+  "last_updated": "2026-03-30",
   "articles": [
     {"id": "001", "date": "2026-03-22", "title": "Llama-4-MoE-Architecture", "file": "001-2026-03-22-Llama-4-MoE-Architecture.md"},
     {"id": "002", "date": "2026-03-23", "title": "DeepSeek-V3.2-Sparse-Attention-RL-Agent", "file": "002-2026-03-23-DeepSeek-V3.2-Sparse-Attention-RL-Agent.md"},
@@ -126,6 +126,7 @@
     {"id": "122", "date": "2026-03-29", "title": "Mamba-3-State-Space-Model-Inference-Efficiency", "file": "122-2026-03-29-Mamba-3-State-Space-Model-Inference-Efficiency.md"},
     {"id": "123", "date": "2026-03-29", "title": "TTSR-测试时自反思持续推理改进框架", "file": "123-2026-03-29-TTSR-测试时自反思持续推理改进框架.md"},
     {"id": "124", "date": "2026-03-29", "title": "HM-RAG-分层多智能体多模态检索增强生成", "file": "124-2026-03-29-HM-RAG-分层多智能体多模态检索增强生成.md"},
-    {"id": "125", "date": "2026-03-29", "title": "LLM自改进技术系统性综述", "file": "125-2026-03-29-LLM自改进技术系统性综述.md"}
+    {"id": "125", "date": "2026-03-29", "title": "LLM自改进技术系统性综述", "file": "125-2026-03-29-LLM自改进技术系统性综述.md"},
+    {"id": "129", "date": "2026-03-30", "title": "Muon优化器大模型训练新范式", "file": "129-2026-03-30-Muon优化器大模型训练新范式.md"}
   ]
 }
