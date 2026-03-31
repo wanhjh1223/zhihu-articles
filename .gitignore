@@ -30,3 +30,14 @@ data_process/
 *力扣*
 LeetCode_*.docx
 leetcode_*.pdf
+
+# Agent memory and personal files (should not be in repo)
+MEMORY.md
+HF_TOKEN_TUTORIAL.md
+casehold_examples.md
+
+# Scripts and config (workspace tools, not articles)
+generate_*.py
+gen_doc_*.py
+generate_hot*.py
+config/
