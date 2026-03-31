@@ -1,5 +1,5 @@
 {
-  "total_articles": 160,
+  "total_articles": 161,
   "last_updated": "2026-04-01",
   "articles": [
     {"id": "001", "date": "2026-03-22", "title": "Llama-4-MoE-Architecture", "file": "001-2026-03-22-Llama-4-MoE-Architecture.md"},
@@ -129,6 +129,7 @@
     {"id": "125", "date": "2026-03-29", "title": "LLM自改进技术系统性综述", "file": "125-2026-03-29-LLM自改进技术系统性综述.md"},
     {"id": "129", "date": "2026-03-30", "title": "Muon优化器大模型训练新范式", "file": "129-2026-03-30-Muon优化器大模型训练新范式.md"},
     {"id": "130", "date": "2026-03-30", "title": "MARS-多智能体强化学习双系统深度研究框架", "file": "130-2026-03-30-MARS-多智能体强化学习双系统深度研究框架.md"},
-    {"id": "160", "date": "2026-04-01", "title": "Min-Seek-稳定序列测试时扩展方法", "file": "160-2026-04-01-Min-Seek稳定序列测试时扩展方法.md"}
+    {"id": "160", "date": "2026-04-01", "title": "Min-Seek-稳定序列测试时扩展方法", "file": "160-2026-04-01-Min-Seek稳定序列测试时扩展方法.md"},
+    {"id": "161", "date": "2026-04-01", "title": "Open-Reasoner-Zero-极简PPO高效推理训练开源突破", "file": "162-2026-04-01-Open-Reasoner-Zero-极简PPO高效推理训练开源突破.md"}
   ]
 }
