@@ -24,3 +24,9 @@ projects/
 
 # Independent data processing repositories (separate from articles repo)
 data_process/
+
+# LeetCode / Coding practice (separate from article repo)
+*leetcode*
+*力扣*
+LeetCode_*.docx
+leetcode_*.pdf
