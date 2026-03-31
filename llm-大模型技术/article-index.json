@@ -1,6 +1,6 @@
 {
-  "total_articles": 130,
-  "last_updated": "2026-03-30",
+  "total_articles": 160,
+  "last_updated": "2026-04-01",
   "articles": [
     {"id": "001", "date": "2026-03-22", "title": "Llama-4-MoE-Architecture", "file": "001-2026-03-22-Llama-4-MoE-Architecture.md"},
     {"id": "002", "date": "2026-03-23", "title": "DeepSeek-V3.2-Sparse-Attention-RL-Agent", "file": "002-2026-03-23-DeepSeek-V3.2-Sparse-Attention-RL-Agent.md"},
@@ -128,6 +128,7 @@
     {"id": "124", "date": "2026-03-29", "title": "HM-RAG-分层多智能体多模态检索增强生成", "file": "124-2026-03-29-HM-RAG-分层多智能体多模态检索增强生成.md"},
     {"id": "125", "date": "2026-03-29", "title": "LLM自改进技术系统性综述", "file": "125-2026-03-29-LLM自改进技术系统性综述.md"},
     {"id": "129", "date": "2026-03-30", "title": "Muon优化器大模型训练新范式", "file": "129-2026-03-30-Muon优化器大模型训练新范式.md"},
-    {"id": "130", "date": "2026-03-30", "title": "MARS-多智能体强化学习双系统深度研究框架", "file": "130-2026-03-30-MARS-多智能体强化学习双系统深度研究框架.md"}
+    {"id": "130", "date": "2026-03-30", "title": "MARS-多智能体强化学习双系统深度研究框架", "file": "130-2026-03-30-MARS-多智能体强化学习双系统深度研究框架.md"},
+    {"id": "160", "date": "2026-04-01", "title": "Min-Seek-稳定序列测试时扩展方法", "file": "160-2026-04-01-Min-Seek稳定序列测试时扩展方法.md"}
   ]
 }
