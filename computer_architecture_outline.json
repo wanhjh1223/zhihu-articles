@@ -1,0 +1,623 @@
+{
+  "subject": "计算机组成架构",
+  "chapters": {
+    "chapter5": {
+      "title": "存储系统基础",
+      "topics": [
+        {
+          "id": "5.1",
+          "name": "存储层次",
+          "name_en": "Memory Hierarchy",
+          "samples": {
+            "zh": [
+              "计算机存储层次从寄存器到磁盘形成金字塔结构，访问速度递减而容量递增",
+              "存储层次设计基于局部性原理，平衡速度、容量和成本",
+              "现代计算机采用多级缓存结构弥合CPU与内存之间的速度差距",
+              "存储层次包括寄存器、缓存、主存、磁盘和远程存储五个层次",
+              "存储层次的有效性依赖于程序访问数据的局部性特征"
+            ],
+            "en": [
+              "Memory hierarchy forms a pyramid from registers to disk with decreasing speed and increasing capacity",
+              "Memory hierarchy design balances speed, capacity, and cost based on locality principles",
+              "Modern computers employ multi-level cache to bridge the speed gap between CPU and memory",
+              "Memory hierarchy includes five levels: registers, cache, main memory, disk, and remote storage",
+              "Effectiveness of memory hierarchy relies on program's data access locality characteristics"
+            ]
+          }
+        },
+        {
+          "id": "5.2",
+          "name": "RAM分类",
+          "name_en": "RAM Classification",
+          "samples": {
+            "zh": [
+              "随机存取存储器RAM分为静态SRAM和动态DRAM两大类",
+              "SRAM使用触发器存储数据，速度快但集成度低、功耗高",
+              "DRAM利用电容电荷存储信息，需要定期刷新防止数据丢失",
+              "SRAM主要用于高速缓存，DRAM用于主存储器",
+              "新型存储器如MRAM和ReRAM正在挑战传统RAM的地位"
+            ],
+            "en": [
+              "Random Access Memory is classified into Static RAM and Dynamic RAM",
+              "SRAM uses flip-flops for data storage, offering fast speed but low density and high power",
+              "DRAM stores information using capacitor charge and requires periodic refresh to prevent data loss",
+              "SRAM is mainly used for cache memory while DRAM serves as main memory",
+              "Emerging memories like MRAM and ReRAM are challenging traditional RAM positions"
+            ]
+          }
+        },
+        {
+          "id": "5.3",
+          "name": "DRAM演进",
+          "name_en": "DRAM Evolution",
+          "samples": {
+            "zh": [
+              "DRAM从SDRAM发展到DDR系列，传输速率持续提升",
+              "DDR SDRAM采用双倍数据率技术，在时钟上升沿和下降沿都传输数据",
+              "DDR4相比DDR3降低了工作电压，提高了数据传输速率和容量",
+              "DDR5进一步增加带宽，引入决策反馈均衡技术改善信号完整性",
+              "LPDDR专为移动设备设计，在保持性能的同时大幅降低功耗"
+            ],
+            "en": [
+              "DRAM has evolved from SDRAM to DDR series with continuously improved transfer rates",
+              "DDR SDRAM adopts double data rate technology, transferring data on both clock edges",
+              "DDR4 reduces operating voltage compared to DDR3 while increasing data rate and capacity",
+              "DDR5 further increases bandwidth and introduces decision feedback equalization for signal integrity",
+              "LPDDR is designed for mobile devices, significantly reducing power while maintaining performance"
+            ]
+          }
+        },
+        {
+          "id": "5.4",
+          "name": "DRAM内部结构",
+          "name_en": "DRAM Internal Structure",
+          "samples": {
+            "zh": [
+              "DRAM存储单元由一个晶体管和一个电容组成，称为1T1C结构",
+              "DRAM芯片按行和列组织成二维阵列，通过行列地址译码访问",
+              "DRAM读取操作具有破坏性，需要读后重写恢复数据",
+              "刷新操作按行进行，现代DRAM采用分布式刷新策略",
+              "DRAM存储体分组设计支持 Bank 级并行访问提高吞吐量"
+            ],
+            "en": [
+              "DRAM memory cell consists of one transistor and one capacitor, known as 1T1C structure",
+              "DRAM chips are organized in 2D arrays of rows and columns, accessed through row and column decoders",
+              "DRAM read operation is destructive, requiring write-back to restore data",
+              "Refresh operations are performed row by row, with modern DRAM using distributed refresh strategy",
+              "DRAM bank grouping design supports bank-level parallel access to improve throughput"
+            ]
+          }
+        }
+      ]
+    },
+    "chapter6": {
+      "title": "高速缓存Cache",
+      "topics": [
+        {
+          "id": "6.1",
+          "name": "Cache原理",
+          "name_en": "Cache Principles",
+          "samples": {
+            "zh": [
+              "Cache利用程序的时间局部性和空间局部性加速内存访问",
+              "CPU访问Cache命中时可直接获取数据， miss时需要从主存加载",
+              "Cache命中率是衡量缓存效率的关键指标，现代处理器可达95%以上",
+              "Cache行是数据交换的基本单位，通常为32字节到128字节",
+              "写策略决定Cache修改后如何与主存同步，包括写直达和写回两种方式"
+            ],
+            "en": [
+              "Cache exploits temporal and spatial locality to accelerate memory access",
+              "CPU obtains data directly on cache hit, while miss requires loading from main memory",
+              "Cache hit rate is a key metric for cache efficiency, reaching over 95% in modern processors",
+              "Cache line is the basic unit of data transfer, typically 32 to 128 bytes",
+              "Write policy determines how cache modifications synchronize with main memory: write-through and write-back"
+            ]
+          }
+        },
+        {
+          "id": "6.2",
+          "name": "映射方式",
+          "name_en": "Cache Mapping",
+          "samples": {
+            "zh": [
+              "直接映射方式中每个主存块只能映射到唯一的Cache行",
+              "全相联映射允许主存块存放在任意Cache行，灵活性最高",
+              "组相联映射将Cache分成若干组，主存块映射到组内任意行",
+              "直接映射实现简单但容易发生冲突，组相联是折中方案",
+              "增加相联度可降低冲突失效，但会增加访问延迟和硬件复杂度"
+            ],
+            "en": [
+              "In direct mapping, each memory block maps to exactly one cache line",
+              "Fully associative mapping allows memory blocks to be placed in any cache line with maximum flexibility",
+              "Set-associative mapping divides cache into sets, mapping memory blocks to any line within a set",
+              "Direct mapping is simple but prone to conflicts; set-associative provides a compromise",
+              "Increasing associativity reduces conflict misses but increases access latency and hardware complexity"
+            ]
+          }
+        },
+        {
+          "id": "6.3",
+          "name": "替换算法",
+          "name_en": "Replacement Algorithms",
+          "samples": {
+            "zh": [
+              "LRU算法替换最近最少使用的Cache行，命中率较高",
+              "FIFO算法按先进先出原则替换最早进入Cache的块",
+              "随机替换算法实现简单，无需记录访问历史",
+              "LFU算法根据访问频率选择替换对象，适合特定访问模式",
+              "伪LRU用硬件友好的近似方法实现接近LRU的性能"
+            ],
+            "en": [
+              "LRU algorithm replaces the least recently used cache line with higher hit rates",
+              "FIFO algorithm replaces the earliest entered block following first-in-first-out principle",
+              "Random replacement is simple to implement without tracking access history",
+              "LFU algorithm selects replacement based on access frequency for specific patterns",
+              "Pseudo-LRU uses hardware-friendly approximation to achieve near-LRU performance"
+            ]
+          }
+        },
+        {
+          "id": "6.4",
+          "name": "多级Cache",
+          "name_en": "Multi-level Cache",
+          "samples": {
+            "zh": [
+              "现代处理器采用L1、L2、L3三级缓存结构平衡速度与容量",
+              "L1 Cache分为指令缓存和数据缓存，支持并行访问",
+              "L2 Cache作为L1的后备存储，容量更大但延迟更高",
+              "L3 Cache被多个核心共享，减少多核间的数据重复存储",
+              "多级Cache设计需要权衡各级的大小、延迟和功耗"
+            ],
+            "en": [
+              "Modern processors use L1, L2, L3 three-level cache to balance speed and capacity",
+              "L1 cache is split into instruction and data caches supporting parallel access",
+              "L2 cache serves as backup storage for L1 with larger capacity but higher latency",
+              "L3 cache is shared among multiple cores, reducing duplicate data storage",
+              "Multi-level cache design requires trade-offs in size, latency, and power for each level"
+            ]
+          }
+        },
+        {
+          "id": "6.5",
+          "name": "Cache性能",
+          "name_en": "Cache Performance",
+          "samples": {
+            "zh": [
+              "Cache失效分为强制失效、容量失效和冲突失效三类",
+              "平均内存访问时间等于命中时间加上失效率乘以失效惩罚",
+              "降低失效率可通过增大Cache容量或提高相联度实现",
+              "减少失效惩罚采用关键字优先和让读优先于写的技术",
+              "预取技术可在实际需要前将数据加载到Cache中"
+            ],
+            "en": [
+              "Cache misses are classified as compulsory, capacity, and conflict misses",
+              "Average memory access time equals hit time plus miss rate times miss penalty",
+              "Reducing miss rate can be achieved by increasing cache size or associativity",
+              "Reducing miss penalty uses critical word first and read priority over write",
+              "Prefetching loads data into cache before actual need"
+            ]
+          }
+        }
+      ]
+    },
+    "chapter7": {
+      "title": "虚拟存储",
+      "topics": [
+        {
+          "id": "7.1",
+          "name": "虚拟存储",
+          "name_en": "Virtual Memory",
+          "samples": {
+            "zh": [
+              "虚拟存储使程序使用比物理内存更大的地址空间",
+              "虚拟地址通过地址转换映射到物理地址，对程序员透明",
+              "分页将虚拟地址空间和物理内存划分为固定大小的页框",
+              "虚拟存储支持多道程序运行，实现内存保护和共享",
+              "缺页异常处理将所需页面从磁盘调入物理内存"
+            ],
+            "en": [
+              "Virtual memory allows programs to use larger address space than physical memory",
+              "Virtual addresses are translated to physical addresses transparently to programmers",
+              "Paging divides virtual address space and physical memory into fixed-size frames",
+              "Virtual memory supports multiprogramming with memory protection and sharing",
+              "Page fault handling brings required pages from disk into physical memory"
+            ]
+          }
+        },
+        {
+          "id": "7.2",
+          "name": "页表TLB",
+          "name_en": "Page Table and TLB",
+          "samples": {
+            "zh": [
+              "页表存储虚拟页到物理页框的映射关系",
+              "多级页表将页表分级存储，节省内存空间",
+              "TLB是页表的专用高速缓存，加速地址转换",
+              "TLB命中时可直接完成地址转换，miss时需查询页表",
+              "TLB失效处理需要软件或硬件更新TLB表项"
+            ],
+            "en": [
+              "Page table stores mapping between virtual pages and physical page frames",
+              "Multi-level page tables store mappings hierarchically to save memory",
+              "TLB is a dedicated cache for page tables to accelerate address translation",
+              "TLB hit allows direct address translation while miss requires page table lookup",
+              "TLB miss handling requires software or hardware to update TLB entries"
+            ]
+          }
+        },
+        {
+          "id": "7.3",
+          "name": "分段机制",
+          "name_en": "Segmentation",
+          "samples": {
+            "zh": [
+              "分段按程序逻辑将地址空间划分为不同段如代码段、数据段",
+              "段内连续但段间可以不连续，支持动态增长",
+              "段表记录每个段的基地址、长度和属性信息",
+              "分段便于实现共享和保护，但可能产生外部碎片",
+              "段页式结合分段和分页的优点，是现代系统的主流方案"
+            ],
+            "en": [
+              "Segmentation divides address space into logical segments like code and data",
+              "Segments are contiguous internally but can be discontinuous between segments, supporting dynamic growth",
+              "Segment table records base address, length, and attributes for each segment",
+              "Segmentation facilitates sharing and protection but may cause external fragmentation",
+              "Segmentation-paging combines advantages of both and is the mainstream in modern systems"
+            ]
+          }
+        },
+        {
+          "id": "7.4",
+          "name": "内存保护",
+          "name_en": "Memory Protection",
+          "samples": {
+            "zh": [
+              "内存保护防止进程越界访问或修改其他进程数据",
+              "页表项中的保护位控制页面的读写执行权限",
+              "地址越界检查时比较偏移量与段长度或页面大小",
+              "操作系统通过特权级区分内核态和用户态的访问权限",
+              "现代处理器支持NX位防止数据区执行代码"
+            ],
+            "en": [
+              "Memory protection prevents processes from out-of-bounds access or modifying other processes' data",
+              "Protection bits in page table entries control read, write, and execute permissions",
+              "Address bounds checking compares offset with segment length or page size",
+              "OS distinguishes kernel and user mode access privileges through privilege levels",
+              "Modern processors support NX bit to prevent code execution from data regions"
+            ]
+          }
+        }
+      ]
+    },
+    "chapter8": {
+      "title": "总线与I/O系统",
+      "topics": [
+        {
+          "id": "8.1",
+          "name": "总线概念",
+          "name_en": "Bus Concepts",
+          "samples": {
+            "zh": [
+              "总线是连接计算机各部件的共享传输通路",
+              "系统总线包括地址总线、数据总线和控制总线",
+              "总线宽度决定了一次能传输的数据位数",
+              "总线带宽是单位时间内能传输的最大数据量",
+              "同步总线使用时钟信号协调传输，异步总线使用握手信号"
+            ],
+            "en": [
+              "Bus is a shared transmission path connecting computer components",
+              "System bus includes address bus, data bus, and control bus",
+              "Bus width determines how many bits can be transferred at once",
+              "Bus bandwidth is the maximum data amount transferable per unit time",
+              "Synchronous bus uses clock signals for coordination while asynchronous bus uses handshake"
+            ]
+          }
+        },
+        {
+          "id": "8.2",
+          "name": "仲裁机制",
+          "name_en": "Bus Arbitration",
+          "samples": {
+            "zh": [
+              "总线仲裁决定哪个主设备获得总线使用权",
+              "集中式仲裁由中央仲裁器统一分配总线",
+              "分布式仲裁各设备通过优先级逻辑自行裁决",
+              "菊花链仲裁按物理位置顺序确定优先级",
+              "公平仲裁算法确保低优先级设备不会饿死"
+            ],
+            "en": [
+              "Bus arbitration determines which master device obtains bus access rights",
+              "Centralized arbitration uses a central arbiter to allocate the bus",
+              "Distributed arbitration lets devices resolve priority through logic",
+              "Daisy-chain arbitration determines priority by physical position order",
+              "Fair arbitration algorithms ensure low-priority devices won't starve"
+            ]
+          }
+        },
+        {
+          "id": "8.3",
+          "name": "PCIe/USB",
+          "name_en": "PCIe and USB",
+          "samples": {
+            "zh": [
+              "PCIe采用串行点对点连接，通过Lane数扩展带宽",
+              "PCIe使用包交换协议，支持热插拔和错误检测",
+              "USB是通用串行总线标准，支持多种设备类型",
+              "USB采用主从架构，主机控制器管理总线访问",
+              "USB3.0引入全双工通信，大幅提升传输速率"
+            ],
+            "en": [
+              "PCIe uses serial point-to-point connections, expanding bandwidth through lane count",
+              "PCIe uses packet-based protocol supporting hot-plug and error detection",
+              "USB is a universal serial bus standard supporting various device types",
+              "USB adopts master-slave architecture with host controller managing bus access",
+              "USB3.0 introduces full-duplex communication significantly improving transfer rates"
+            ]
+          }
+        },
+        {
+          "id": "8.4",
+          "name": "I/O接口",
+          "name_en": "I/O Interface",
+          "samples": {
+            "zh": [
+              "I/O接口连接外部设备与系统总线，完成信号转换",
+              "I/O端口是CPU可直接访问的寄存器，包括数据、状态和控制端口",
+              "编址方式分为统一编址和独立编址两种",
+              "统一编址将I/O端口映射到内存地址空间",
+              "独立编址使用专门的I/O指令访问端口，不占用内存空间"
+            ],
+            "en": [
+              "I/O interface connects external devices to system bus and performs signal conversion",
+              "I/O ports are registers directly accessible by CPU including data, status, and control ports",
+              "Addressing methods include memory-mapped and isolated I/O",
+              "Memory-mapped I/O maps I/O ports into memory address space",
+              "Isolated I/O uses dedicated I/O instructions without occupying memory space"
+            ]
+          }
+        },
+        {
+          "id": "8.5",
+          "name": "中断DMA通道",
+          "name_en": "Interrupt and DMA",
+          "samples": {
+            "zh": [
+              "中断是设备通知CPU的异步机制，需要保存和恢复现场",
+              "中断向量表存储各中断源的处理程序入口地址",
+              "中断优先级决定多个中断同时发生时的响应顺序",
+              "DMA允许外设直接与内存交换数据，无需CPU介入",
+              "DMA控制器管理数据传输过程，仅在开始和结束时中断CPU"
+            ],
+            "en": [
+              "Interrupt is an asynchronous mechanism for devices to notify CPU, requiring context save and restore",
+              "Interrupt vector table stores handler entry addresses for each interrupt source",
+              "Interrupt priority determines response order when multiple interrupts occur",
+              "DMA allows peripherals to exchange data directly with memory without CPU involvement",
+              "DMA controller manages data transfer, interrupting CPU only at start and end"
+            ]
+          }
+        },
+        {
+          "id": "8.6",
+          "name": "通道处理器",
+          "name_en": "Channel Processor",
+          "samples": {
+            "zh": [
+              "通道是具有独立指令集的专用I/O处理器",
+              "字节多路通道轮流为多个低速设备服务",
+              "选择通道一次只为一个高速设备服务",
+              "数组多路通道结合两者优点，支持成组传输",
+              "通道程序控制I/O操作，减轻CPU负担"
+            ],
+            "en": [
+              "Channel is a dedicated I/O processor with its own instruction set",
+              "Byte multiplexor channel serves multiple low-speed devices in turn",
+              "Selector channel serves one high-speed device at a time",
+              "Block multiplexor channel combines advantages supporting block transfer",
+              "Channel programs control I/O operations, reducing CPU burden"
+            ]
+          }
+        }
+      ]
+    },
+    "chapter9": {
+      "title": "多核与并行",
+      "topics": [
+        {
+          "id": "9.1",
+          "name": "多核处理器",
+          "name_en": "Multi-core Processor",
+          "samples": {
+            "zh": [
+              "多核处理器将多个CPU核心集成在同一芯片上",
+              "多核架构分为同构多核和异构多核两种类型",
+              "同构多核各核心功能相同，适合并行任务处理",
+              "异构多核组合不同类型核心，优化功耗和性能",
+              "多核处理器通过共享或分布式缓存实现数据交换"
+            ],
+            "en": [
+              "Multi-core processors integrate multiple CPU cores on a single chip",
+              "Multi-core architectures are classified as homogeneous and heterogeneous",
+              "Homogeneous multi-core has identical cores suitable for parallel task processing",
+              "Heterogeneous multi-core combines different core types to optimize power and performance",
+              "Multi-core processors exchange data through shared or distributed caches"
+            ]
+          }
+        },
+        {
+          "id": "9.2",
+          "name": "缓存一致性",
+          "name_en": "Cache Coherence",
+          "samples": {
+            "zh": [
+              "缓存一致性确保多核访问同一内存位置时看到相同数据",
+              "MESI协议用四种状态标记缓存行：修改、独占、共享、无效",
+              "监听协议通过总线监听其他核心的缓存操作",
+              "目录协议维护共享数据的位置信息减少总线流量",
+              "伪共享是不同核心修改同一缓存行不同字段导致的性能问题"
+            ],
+            "en": [
+              "Cache coherence ensures multiple cores see consistent data when accessing the same memory",
+              "MESI protocol marks cache lines with four states: Modified, Exclusive, Shared, Invalid",
+              "Snooping protocols monitor other cores' cache operations through the bus",
+              "Directory protocols maintain location information of shared data to reduce bus traffic",
+              "False sharing is a performance issue caused by different cores modifying different fields in the same cache line"
+            ]
+          }
+        },
+        {
+          "id": "9.3",
+          "name": "NUMA",
+          "name_en": "NUMA Architecture",
+          "samples": {
+            "zh": [
+              "NUMA架构中每个处理器拥有本地内存，访问远程内存更慢",
+              "CC-NUMA通过缓存一致性实现统一地址空间",
+              "NUMA需要操作系统考虑内存分配的位置策略",
+              "首次接触策略将页面分配到首次访问它的处理器本地",
+              "NUMA感知调度将线程绑定到靠近其数据的处理器"
+            ],
+            "en": [
+              "In NUMA architecture each processor has local memory with slower remote access",
+              "CC-NUMA provides unified address space through cache coherence",
+              "NUMA requires OS to consider memory placement policies",
+              "First-touch policy allocates pages to the local memory of the processor that first accesses them",
+              "NUMA-aware scheduling binds threads to processors near their data"
+            ]
+          }
+        },
+        {
+          "id": "9.4",
+          "name": "同步机制",
+          "name_en": "Synchronization",
+          "samples": {
+            "zh": [
+              "锁用于保护临界区，防止多个线程同时访问共享资源",
+              "原子指令如CAS提供硬件级别的同步原语",
+              "自旋锁在争用短暂时让线程忙等待避免上下文切换",
+              "互斥锁在争用较长时将线程阻塞，节省CPU资源",
+              "读写锁区分读操作和写操作，允许多个读者并发"
+            ],
+            "en": [
+              "Locks protect critical sections preventing multiple threads from accessing shared resources",
+              "Atomic instructions like CAS provide hardware-level synchronization primitives",
+              "Spin locks let threads busy-wait when contention is brief to avoid context switching",
+              "Mutex locks block threads when contention is long, saving CPU resources",
+              "Read-write locks distinguish read and write operations, allowing multiple concurrent readers"
+            ]
+          }
+        }
+      ]
+    },
+    "chapter10": {
+      "title": "新型体系结构",
+      "topics": [
+        {
+          "id": "10.1",
+          "name": "GPU并行",
+          "name_en": "GPU Parallelism",
+          "samples": {
+            "zh": [
+              "GPU采用SIMD架构，单条指令同时处理多组数据",
+              "GPU拥有大量简单核心，适合数据并行任务",
+              "CUDA和OpenCL是主流的GPU编程模型",
+              "GPU内存层次包括寄存器、共享内存、全局内存",
+              "线程束是GPU调度的基本单位，包含32个线程"
+            ],
+            "en": [
+              "GPU adopts SIMD architecture where single instruction processes multiple data simultaneously",
+              "GPU has numerous simple cores suitable for data-parallel tasks",
+              "CUDA and OpenCL are mainstream GPU programming models",
+              "GPU memory hierarchy includes registers, shared memory, and global memory",
+              "Warp is the basic GPU scheduling unit containing 32 threads"
+            ]
+          }
+        },
+        {
+          "id": "10.2",
+          "name": "向量处理器",
+          "name_en": "Vector Processor",
+          "samples": {
+            "zh": [
+              "向量处理器对向量数据执行相同操作，挖掘数据级并行",
+              "向量指令同时处理多个元素，减少控制开销",
+              "向量长度寄存器控制一次处理的元素数量",
+              "向量屏蔽寄存器实现条件执行",
+              "现代CPU的SIMD扩展如AVX继承了向量处理思想"
+            ],
+            "en": [
+              "Vector processors perform same operations on vector data exploiting data-level parallelism",
+              "Vector instructions process multiple elements simultaneously reducing control overhead",
+              "Vector length register controls number of elements processed at once",
+              "Vector mask register enables conditional execution",
+              "Modern CPU SIMD extensions like AVX inherit vector processing concepts"
+            ]
+          }
+        },
+        {
+          "id": "10.3",
+          "name": "多线程技术",
+          "name_en": "Multithreading",
+          "samples": {
+            "zh": [
+              "细粒度多线程每周期切换线程隐藏延迟",
+              "粗粒度多线程在发生长延迟事件时切换线程",
+              "同时多线程SMT允许单个周期发射多线程指令",
+              "超线程技术是Intel的SMT实现，一个核心呈现为两个逻辑处理器",
+              "多线程提高处理器利用率，但会增加单线程性能开销"
+            ],
+            "en": [
+              "Fine-grained multithreading switches threads every cycle to hide latency",
+              "Coarse-grained multithreading switches threads on long-latency events",
+              "Simultaneous multithreading SMT allows issuing instructions from multiple threads per cycle",
+              "Hyper-threading is Intel's SMT implementation presenting one core as two logical processors",
+              "Multithreading improves processor utilization but adds single-thread performance overhead"
+            ]
+          }
+        },
+        {
+          "id": "10.4",
+          "name": "新型体系结构",
+          "name_en": "Emerging Architectures",
+          "samples": {
+            "zh": [
+              "数据流架构按数据可用性驱动计算而非程序计数器",
+              "存内计算将计算单元集成到存储器中减少数据移动",
+              "神经形态芯片模仿大脑结构，适合AI推理",
+              "量子计算利用量子叠加和纠缠实现指数级加速",
+              "可重构计算通过FPGA实现硬件功能的动态配置"
+            ],
+            "en": [
+              "Dataflow architecture drives computation by data availability rather than program counter",
+              "Processing-in-memory integrates compute units into memory reducing data movement",
+              "Neuromorphic chips mimic brain structures suitable for AI inference",
+              "Quantum computing exploits superposition and entanglement for exponential speedup",
+              "Reconfigurable computing enables dynamic hardware configuration through FPGA"
+            ]
+          }
+        },
+        {
+          "id": "10.5",
+          "name": "RISC-V架构",
+          "name_en": "RISC-V Architecture",
+          "samples": {
+            "zh": [
+              "RISC-V是开源指令集架构，无授权费用",
+              "RISC-V采用精简指令集设计，模块化的扩展架构",
+              "基本整数指令集RV32I和RV64I是必需的",
+              "标准扩展包括乘除法、浮点、原子操作等",
+              "RISC-V支持自定义扩展适应特定应用需求"
+            ],
+            "en": [
+              "RISC-V is an open-source ISA without licensing fees",
+              "RISC-V adopts reduced instruction set design with modular extension architecture",
+              "Base integer instruction sets RV32I and RV64I are mandatory",
+              "Standard extensions include multiply-divide, floating-point, atomic operations",
+              "RISC-V supports custom extensions for specific application requirements"
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

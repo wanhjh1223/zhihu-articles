@@ -1,0 +1,223 @@
+[
+  {
+    "id": "4.1",
+    "chapter": 4,
+    "name": "三级调度",
+    "samples": [
+      {"text": "操作系统中的三级调度包括高级调度、中级调度和低级调度", "lang": "zh"},
+      {"text": "作业调度又称高级调度，决定哪些程序被调入内存准备执行", "lang": "zh"},
+      {"text": "中级调度负责进程在内存和外存之间的换入换出操作", "lang": "zh"},
+      {"text": "进程调度又称低级调度，决定哪个就绪进程获得CPU使用权", "lang": "zh"},
+      {"text": "三级调度相互配合，实现系统资源的合理分配与高效利用", "lang": "zh"},
+      {"text": "The three-level scheduling in OS includes long-term, medium-term, and short-term scheduling", "lang": "en"},
+      {"text": "Job scheduling decides which programs are loaded into memory for execution", "lang": "en"},
+      {"text": "Medium-term scheduling handles swapping processes between memory and disk", "lang": "en"},
+      {"text": "Process scheduling determines which ready process gets CPU time", "lang": "en"},
+      {"text": "Three-level scheduling coordinates to achieve efficient resource allocation", "lang": "en"}
+    ]
+  },
+  {
+    "id": "4.2",
+    "chapter": 4,
+    "name": "调度算法",
+    "samples": [
+      {"text": "先来先服务调度算法按照进程到达顺序分配CPU时间", "lang": "zh"},
+      {"text": "短作业优先调度算法优先执行估计运行时间最短的进程", "lang": "zh"},
+      {"text": "时间片轮转调度算法为每个进程分配固定时间片轮流执行", "lang": "zh"},
+      {"text": "优先级调度算法根据进程优先级决定执行顺序", "lang": "zh"},
+      {"text": "多级反馈队列调度算法结合了时间片轮转和优先级调度的优点", "lang": "zh"},
+      {"text": "First-Come-First-Served scheduling allocates CPU based on arrival order", "lang": "en"},
+      {"text": "Shortest Job First prioritizes processes with shortest estimated runtime", "lang": "en"},
+      {"text": "Round Robin scheduling gives each process a fixed time quantum", "lang": "en"},
+      {"text": "Priority scheduling determines execution order based on process priority", "lang": "en"},
+      {"text": "Multilevel Feedback Queue combines benefits of round robin and priority scheduling", "lang": "en"}
+    ]
+  },
+  {
+    "id": "4.3",
+    "chapter": 4,
+    "name": "死锁条件与处理",
+    "samples": [
+      {"text": "死锁产生的四个必要条件包括互斥、占有并等待、不可剥夺和循环等待", "lang": "zh"},
+      {"text": "破坏死锁的必要条件可以预防死锁的发生", "lang": "zh"},
+      {"text": "银行家算法是一种经典的死锁避免算法", "lang": "zh"},
+      {"text": "死锁检测通过资源分配图检查系统是否处于死锁状态", "lang": "zh"},
+      {"text": "死锁解除的方法包括进程终止和资源剥夺", "lang": "zh"},
+      {"text": "Four necessary conditions for deadlock are mutual exclusion, hold and wait, no preemption, and circular wait", "lang": "en"},
+      {"text": "Preventing deadlock requires breaking at least one necessary condition", "lang": "en"},
+      {"text": "Banker's algorithm is a classic deadlock avoidance algorithm", "lang": "en"},
+      {"text": "Deadlock detection uses resource allocation graphs to check system state", "lang": "en"},
+      {"text": "Deadlock recovery methods include process termination and resource preemption", "lang": "en"}
+    ]
+  },
+  {
+    "id": "5.1",
+    "chapter": 5,
+    "name": "内存管理目标",
+    "samples": [
+      {"text": "内存管理的主要目标是实现内存的分配、回收和保护", "lang": "zh"},
+      {"text": "内存管理需要提高内存利用率和系统吞吐量", "lang": "zh"},
+      {"text": "逻辑地址到物理地址的转换是内存管理的核心功能", "lang": "zh"},
+      {"text": "内存管理应支持多道程序设计，实现多进程并发执行", "lang": "zh"},
+      {"text": "内存管理需要解决内存碎片问题和内存扩充需求", "lang": "zh"},
+      {"text": "Memory management aims to allocate, deallocate, and protect memory resources", "lang": "en"},
+      {"text": "Memory management improves utilization and system throughput", "lang": "en"},
+      {"text": "Address translation from logical to physical is a core memory management function", "lang": "en"},
+      {"text": "Memory management supports multiprogramming for concurrent process execution", "lang": "en"},
+      {"text": "Memory management handles fragmentation and memory expansion needs", "lang": "en"}
+    ]
+  },
+  {
+    "id": "5.2",
+    "chapter": 5,
+    "name": "连续存储管理",
+    "samples": [
+      {"text": "连续存储分配为每个进程分配一段连续的内存空间", "lang": "zh"},
+      {"text": "单一连续分配适用于单道程序设计环境", "lang": "zh"},
+      {"text": "固定分区分配将内存划分为若干固定大小的分区", "lang": "zh"},
+      {"text": "动态分区分配根据进程实际需要动态划分内存分区", "lang": "zh"},
+      {"text": "紧凑技术通过移动已分配分区解决外部碎片问题", "lang": "zh"},
+      {"text": "Contiguous memory allocation assigns a continuous block of memory to each process", "lang": "en"},
+      {"text": "Single contiguous allocation is used in single-programming environments", "lang": "en"},
+      {"text": "Fixed partitioning divides memory into partitions of fixed sizes", "lang": "en"},
+      {"text": "Dynamic partitioning allocates memory partitions based on actual process needs", "lang": "en"},
+      {"text": "Compaction solves external fragmentation by relocating allocated partitions", "lang": "en"}
+    ]
+  },
+  {
+    "id": "5.3",
+    "chapter": 5,
+    "name": "分页与分段存储",
+    "samples": [
+      {"text": "分页存储管理将逻辑地址空间和物理内存划分为固定大小的页和页框", "lang": "zh"},
+      {"text": "页表用于记录逻辑页号到物理页框号的映射关系", "lang": "zh"},
+      {"text": "分段存储管理按程序的逻辑结构将内存划分为不同段", "lang": "zh"},
+      {"text": "段表包含段基址和段界限等信息用于地址转换", "lang": "zh"},
+      {"text": "段页式存储结合了分页和分段的优点，先分段再分页", "lang": "zh"},
+      {"text": "Paging divides logical address space and physical memory into fixed-size pages and frames", "lang": "en"},
+      {"text": "Page tables map logical page numbers to physical frame numbers", "lang": "en"},
+      {"text": "Segmentation divides memory according to program logical structure", "lang": "en"},
+      {"text": "Segment tables contain base addresses and limits for address translation", "lang": "en"},
+      {"text": "Segmented paging combines segmentation and paging by paging each segment", "lang": "en"}
+    ]
+  },
+  {
+    "id": "5.4",
+    "chapter": 5,
+    "name": "虚拟存储",
+    "samples": [
+      {"text": "虚拟存储技术使得程序可以在仅部分装入内存的情况下运行", "lang": "zh"},
+      {"text": "请求分页是实现虚拟存储的一种常用方法", "lang": "zh"},
+      {"text": "缺页中断发生时，操作系统需要将所需页面从磁盘调入内存", "lang": "zh"},
+      {"text": "虚拟存储通过局部性原理实现大程序在小内存中运行", "lang": "zh"},
+      {"text": "虚拟存储系统需要解决页面置换和页面分配策略问题", "lang": "zh"},
+      {"text": "Virtual memory allows programs to run with only partial loading into physical memory", "lang": "en"},
+      {"text": "Demand paging is a common virtual memory implementation technique", "lang": "en"},
+      {"text": "Page faults trigger OS to load required pages from disk into memory", "lang": "en"},
+      {"text": "Virtual memory relies on locality principle to run large programs in small memory", "lang": "en"},
+      {"text": "Virtual memory systems handle page replacement and allocation strategies", "lang": "en"}
+    ]
+  },
+  {
+    "id": "5.5",
+    "chapter": 5,
+    "name": "页面置换算法",
+    "samples": [
+      {"text": "最佳置换算法选择未来最长时间不被访问的页面进行置换", "lang": "zh"},
+      {"text": "先进先出置换算法选择最早进入内存的页面进行置换", "lang": "zh"},
+      {"text": "最近最久未使用算法LRU选择最近最长时间未被访问的页面", "lang": "zh"},
+      {"text": "时钟置换算法是LRU的近似实现，使用访问位和循环指针", "lang": "zh"},
+      {"text": "最不经常使用算法LFU根据页面的访问频率决定置换对象", "lang": "zh"},
+      {"text": "Optimal page replacement selects the page not used for the longest future time", "lang": "en"},
+      {"text": "FIFO replacement selects the page that entered memory earliest", "lang": "en"},
+      {"text": "LRU selects the page that has not been accessed for the longest time", "lang": "en"},
+      {"text": "Clock algorithm approximates LRU using reference bits and a circular pointer", "lang": "en"},
+      {"text": "LFU replacement selects pages based on access frequency", "lang": "en"}
+    ]
+  },
+  {
+    "id": "5.6",
+    "chapter": 5,
+    "name": "抖动与工作集",
+    "samples": [
+      {"text": "抖动现象是指页面频繁换入换出导致系统性能急剧下降", "lang": "zh"},
+      {"text": "抖动产生的原因是分配给进程的物理页框数量不足", "lang": "zh"},
+      {"text": "工作集是指进程在一段时间内实际访问的页面集合", "lang": "zh"},
+      {"text": "工作集模型可用于指导页面分配和防止抖动", "lang": "zh"},
+      {"text": "缺页率反馈控制根据缺页率动态调整分配给进程的页框数", "lang": "zh"},
+      {"text": "Thrashing occurs when frequent page swapping causes severe performance degradation", "lang": "en"},
+      {"text": "Thrashing results from insufficient physical frames allocated to a process", "lang": "en"},
+      {"text": "Working set is the set of pages a process accesses during a time window", "lang": "en"},
+      {"text": "Working set model guides page allocation and prevents thrashing", "lang": "en"},
+      {"text": "Page fault frequency control adjusts allocated frames based on fault rate", "lang": "en"}
+    ]
+  },
+  {
+    "id": "6.1",
+    "chapter": 6,
+    "name": "文件逻辑结构",
+    "samples": [
+      {"text": "文件的逻辑结构是从用户角度看到的文件组织形式", "lang": "zh"},
+      {"text": "流式文件是由无结构的字符序列组成的文件", "lang": "zh"},
+      {"text": "记录式文件由若干具有相同结构的记录组成", "lang": "zh"},
+      {"text": "顺序文件中的记录按关键字顺序排列便于顺序存取", "lang": "zh"},
+      {"text": "索引文件通过索引表实现记录的快速随机访问", "lang": "zh"},
+      {"text": "File logical structure is how users view file organization", "lang": "en"},
+      {"text": "Stream files consist of unstructured sequences of characters", "lang": "en"},
+      {"text": "Record-based files consist of records with identical structure", "lang": "en"},
+      {"text": "Sequential files arrange records in key order for sequential access", "lang": "en"},
+      {"text": "Indexed files use index tables for fast random access to records", "lang": "en"}
+    ]
+  },
+  {
+    "id": "6.2",
+    "chapter": 6,
+    "name": "文件物理结构",
+    "samples": [
+      {"text": "连续分配将文件存储在连续的物理磁盘块中", "lang": "zh"},
+      {"text": "链接分配使用指针将分散的磁盘块链接成文件", "lang": "zh"},
+      {"text": "显式链接将链接指针集中存放在文件分配表FAT中", "lang": "zh"},
+      {"text": "索引分配为每个文件建立索引块记录数据块位置", "lang": "zh"},
+      {"text": "混合索引分配结合了直接索引和间接索引的优点", "lang": "zh"},
+      {"text": "Contiguous allocation stores files in consecutive physical disk blocks", "lang": "en"},
+      {"text": "Linked allocation uses pointers to chain scattered disk blocks", "lang": "en"},
+      {"text": "Explicit linking stores pointers in a centralized File Allocation Table", "lang": "en"},
+      {"text": "Indexed allocation uses index blocks to record data block locations", "lang": "en"},
+      {"text": "Hybrid indexed allocation combines direct and indirect indexing", "lang": "en"}
+    ]
+  },
+  {
+    "id": "6.3",
+    "chapter": 6,
+    "name": "目录管理",
+    "samples": [
+      {"text": "文件目录用于记录文件的管理信息和控制信息", "lang": "zh"},
+      {"text": "单级目录结构简单但无法解决文件命名冲突问题", "lang": "zh"},
+      {"text": "两级目录结构将目录分为主目录和用户目录", "lang": "zh"},
+      {"text": "树形目录结构允许用户创建子目录形成层次结构", "lang": "zh"},
+      {"text": "无环图目录结构允许文件被多个目录共享", "lang": "zh"},
+      {"text": "File directories record management and control information for files", "lang": "en"},
+      {"text": "Single-level directories are simple but cannot resolve naming conflicts", "lang": "en"},
+      {"text": "Two-level directories separate master directories from user directories", "lang": "en"},
+      {"text": "Tree-structured directories allow hierarchical organization with subdirectories", "lang": "en"},
+      {"text": "Acyclic graph directories allow files to be shared among multiple directories", "lang": "en"}
+    ]
+  },
+  {
+    "id": "6.4",
+    "chapter": 6,
+    "name": "文件保护",
+    "samples": [
+      {"text": "文件保护机制防止文件被非法访问和修改", "lang": "zh"},
+      {"text": "访问控制列表ACL为每个文件记录可访问用户及其权限", "lang": "zh"},
+      {"text": "权限位机制通过读、写、执行位控制文件访问", "lang": "zh"},
+      {"text": "文件加密技术通过密码学方法保护文件内容安全", "lang": "zh"},
+      {"text": "口令保护要求用户在访问文件前输入正确密码", "lang": "zh"},
+      {"text": "File protection mechanisms prevent unauthorized access and modification", "lang": "en"},
+      {"text": "Access Control Lists record which users have what permissions for each file", "lang": "en"},
+      {"text": "Permission bits control file access through read, write, and execute bits", "lang": "en"},
+      {"text": "File encryption uses cryptographic methods to protect file contents", "lang": "en"},
+      {"text": "Password protection requires correct passwords before file access", "lang": "en"}
+    ]
+  }
+]

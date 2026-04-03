@@ -1,0 +1,56 @@
+# OpenClaw workspace files (should not be in article repo)
+AGENTS.md
+BOOTSTRAP.md
+IDENTITY.md
+SOUL.md
+TOOLS.md
+USER.md
+HEARTBEAT.md
+memory/
+memory/*.md
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OpenClaw workspace directories
+projects/
+
+# Independent data processing repositories (separate from articles repo)
+data_process/
+
+# LeetCode / Coding practice (separate from article repo)
+*leetcode*
+*力扣*
+LeetCode_*.docx
+leetcode_*.pdf
+
+# Agent memory and personal files (should not be in repo)
+MEMORY.md
+HF_TOKEN_TUTORIAL.md
+casehold_examples.md
+
+# Scripts and config (workspace tools, not articles)
+generate_*.py
+gen_doc_*.py
+generate_hot*.py
+process_*.py
+config/
+
+# Skills (OpenClaw workspace tools)
+skills/
+
+# Data and index files
+article-index.json
+pretraining_datasets_recommendation.md
+
+# Miscellaneous
+1
+: 
+EOF

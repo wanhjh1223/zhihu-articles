@@ -1,0 +1,544 @@
+{
+  "chapters": [
+    {
+      "chapter": 1,
+      "title": "计算机系统概述(Computer System Overview)",
+      "knowledge_points": [
+        {
+          "point": "计算机发展历程",
+          "category": "history",
+          "samples": {
+            "zh": [
+              "第一台电子计算机ENIAC于1946年在美国宾夕法尼亚大学诞生",
+              "计算机发展经历了电子管、晶体管、集成电路和大规模集成电路四个时代",
+              "摩尔定律指出集成电路上可容纳的晶体管数量每18-24个月翻一番",
+              "从巨型机到微型机，计算机体积不断缩小而性能持续提升",
+              "量子计算和生物计算代表了计算机发展的未来方向"
+            ],
+            "en": [
+              "The first electronic computer ENIAC was born in 1946 at the University of Pennsylvania",
+              "Computer development has gone through four eras: vacuum tubes, transistors, integrated circuits, and VLSI",
+              "Moore's Law states that the number of transistors on integrated circuits doubles every 18-24 months",
+              "From mainframes to microcomputers, computer size continues to shrink while performance improves",
+              "Quantum computing and biological computing represent future directions of computer development"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "chapter": 2,
+      "title": "数据表示与运算(Data Representation and Operations)",
+      "knowledge_points": [
+        {
+          "point": "数制与编码",
+          "category": "number_system",
+          "samples": {
+            "zh": [
+              "计算机使用二进制表示数据，因为电子元件具有两种稳定状态",
+              "十进制转二进制可采用除2取余法，二进制转十进制采用按权展开法",
+              "八进制和十六进制是二进制的紧凑表示，便于人类阅读",
+              "BCD码用4位二进制表示1位十进制数，便于十进制计算",
+              "格雷码相邻两个编码只有一位不同，常用于减少转换错误"
+            ],
+            "en": [
+              "Computers use binary to represent data because electronic components have two stable states",
+              "Decimal to binary conversion uses division-by-2 with remainder method",
+              "Octal and hexadecimal are compact representations of binary for human readability",
+              "BCD code uses 4 bits to represent 1 decimal digit for decimal arithmetic",
+              "Gray code differs by only one bit between adjacent codes, reducing conversion errors"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "chapter": 3,
+      "title": "计算机硬件体系(Computer Hardware Architecture)",
+      "knowledge_points": [
+        {
+          "point": "冯诺依曼架构",
+          "category": "von_neumann",
+          "samples": {
+            "zh": [
+              "冯诺依曼体系结构由运算器、控制器、存储器、输入设备和输出设备五大部件组成",
+              "存储程序思想将指令和数据以同等地位存储在存储器中",
+              "计算机按照存储的程序顺序执行指令，实现自动计算",
+              "CPU包含运算器和控制器，是计算机的核心部件",
+              "冯诺依曼架构是现代计算机设计的基础，至今仍然广泛应用"
+            ],
+            "en": [
+              "Von Neumann architecture consists of five components: ALU, control unit, memory, input and output devices",
+              "Stored program concept treats instructions and data equally in memory",
+              "Computers execute instructions sequentially according to stored programs for automatic computing",
+              "CPU contains ALU and control unit, serving as the core component of computers",
+              "Von Neumann architecture remains the foundation of modern computer design"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "chapter": 4,
+      "title": "数据结构基础(Data Structures Fundamentals)",
+      "knowledge_points": [
+        {
+          "point": "数据结构概念",
+          "category": "ds_concept",
+          "samples": {
+            "zh": [
+              "数据结构是计算机存储、组织数据的方式，是算法设计的基础",
+              "逻辑结构描述数据元素之间的逻辑关系，与存储无关",
+              "物理结构是数据在计算机内存中的实际存储形式",
+              "算法与数据结构相辅相成，好的数据结构能提升算法效率",
+              "抽象数据类型ADT定义了数据的逻辑结构和基本操作接口"
+            ],
+            "en": [
+              "Data structure is the way computers store and organize data, forming the foundation of algorithm design",
+              "Logical structure describes the logical relationships between data elements, independent of storage",
+              "Physical structure is the actual storage form of data in computer memory",
+              "Algorithms and data structures complement each other, good data structures improve algorithm efficiency",
+              "Abstract Data Type ADT defines the logical structure and basic operation interfaces of data"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "title": "高级数据结构(Advanced Data Structures)",
+      "knowledge_points": [
+        {
+          "point": "字符串匹配",
+          "category": "string_matching",
+          "samples": {
+            "zh": [
+              "字符串匹配是在文本中查找模式串出现位置的经典问题",
+              "暴力匹配算法时间复杂度为O(mn)，简单但效率较低",
+              "KMP算法利用部分匹配表跳过已比较过的字符，时间复杂度O(m+n)",
+              "Boyer-Moore算法从右向左比较，利用坏字符和好后缀规则加速匹配",
+              "字符串匹配广泛应用于文本编辑、搜索引擎、生物信息学等领域"
+            ],
+            "en": [
+              "String matching is a classic problem of finding pattern occurrences in text",
+              "Brute force matching has O(mn) time complexity, simple but less efficient",
+              "KMP algorithm uses partial match table to skip compared characters with O(m+n) complexity",
+              "Boyer-Moore compares from right to left using bad character and good suffix rules",
+              "String matching is widely used in text editing, search engines, and bioinformatics"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "chapter": 6,
+      "title": "算法基础与设计(Algorithm Fundamentals and Design)",
+      "knowledge_points": [
+        {
+          "point": "算法定义",
+          "category": "algorithm_def",
+          "samples": {
+            "zh": [
+              "算法是解决特定问题的一系列清晰定义的指令步骤",
+              "算法具有有穷性，必须在有限步骤后终止",
+              "算法具有确定性，每个步骤都有明确的定义",
+              "算法具有可行性，每一步都可通过基本操作实现",
+              "算法具有输入输出，零个或多个输入，至少一个输出"
+            ],
+            "en": [
+              "Algorithm is a well-defined sequence of instructions to solve a specific problem",
+              "Algorithms have finiteness, must terminate after a finite number of steps",
+              "Algorithms have definiteness, each step is precisely defined",
+              "Algorithms have feasibility, each step can be implemented by basic operations",
+              "Algorithms have input and output, zero or more inputs, at least one output"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "chapter": 7,
+      "title": "操作系统核心(Operating System Core)",
+      "knowledge_points": [
+        {
+          "point": "OS功能",
+          "category": "os_functions",
+          "samples": {
+            "zh": [
+              "操作系统是管理计算机硬件与软件资源的系统软件，为用户提供接口",
+              "进程管理负责创建、调度和终止进程，实现多任务并发执行",
+              "内存管理负责分配和回收内存空间，实现虚拟内存和地址映射",
+              "文件管理提供文件的创建、删除、读写和组织功能",
+              "设备管理通过驱动程序控制硬件设备，提供统一的I/O接口"
+            ],
+            "en": [
+              "Operating system is system software that manages computer hardware and software resources",
+              "Process management handles creation, scheduling, and termination of processes for multitasking",
+              "Memory management allocates and deallocates memory space, implementing virtual memory",
+              "File management provides functions for creating, deleting, reading, and organizing files",
+              "Device management controls hardware through drivers, providing unified I/O interfaces"
+            ]
+          }
+        },
+        {
+          "point": "内存管理",
+          "category": "memory_management",
+          "samples": {
+            "zh": [
+              "连续内存分配将内存划分为连续区域分配给进程",
+              "分页存储管理将物理内存和逻辑内存划分为固定大小的页框和页面",
+              "分段存储管理按程序的逻辑结构划分为不同长度的段",
+              "虚拟内存技术允许程序使用比物理内存更大的地址空间",
+              "页面置换算法如LRU、FIFO用于处理缺页中断时的页面替换"
+            ],
+            "en": [
+              "Contiguous memory allocation divides memory into continuous regions for processes",
+              "Paging divides physical and logical memory into fixed-size frames and pages",
+              "Segmentation divides memory based on program's logical structure into variable-length segments",
+              "Virtual memory allows programs to use address space larger than physical memory",
+              "Page replacement algorithms like LRU and FIFO handle page faults"
+            ]
+          }
+        },
+        {
+          "point": "文件系统",
+          "category": "filesystem",
+          "samples": {
+            "zh": [
+              "文件是存储在存储设备上的命名数据集合，由操作系统统一管理",
+              "文件系统提供目录结构组织文件，支持层次化的文件管理",
+              "文件访问方法包括顺序访问、直接访问和索引访问",
+              "文件分配方式有连续分配、链接分配和索引分配",
+              "常见文件系统包括FAT、NTFS、ext4、APFS等"
+            ],
+            "en": [
+              "Files are named collections of data stored on storage devices, managed by the OS",
+              "Filesystems provide directory structures to organize files hierarchically",
+              "File access methods include sequential access, direct access, and indexed access",
+              "File allocation methods include contiguous, linked, and indexed allocation",
+              "Common filesystems include FAT, NTFS, ext4, and APFS"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "chapter": 8,
+      "title": "数据库系统(Database Systems)",
+      "knowledge_points": [
+        {
+          "point": "数据库概念",
+          "category": "database_concepts",
+          "samples": {
+            "zh": [
+              "数据库是按照数据结构组织、存储和管理数据的仓库",
+              "数据库管理系统DBMS提供数据定义、操纵和控制功能",
+              "数据模型包括层次模型、网状模型和关系模型",
+              "数据库系统由数据库、DBMS、应用程序和数据库管理员组成",
+              "数据库的主要特点包括数据共享、数据独立性和数据完整性"
+            ],
+            "en": [
+              "Database is an organized collection of structured data stored and managed efficiently",
+              "Database Management System provides data definition, manipulation, and control functions",
+              "Data models include hierarchical, network, and relational models",
+              "Database system consists of database, DBMS, applications, and database administrator",
+              "Key database features include data sharing, independence, and integrity"
+            ]
+          }
+        },
+        {
+          "point": "关系模型",
+          "category": "relational_model",
+          "samples": {
+            "zh": [
+              "关系模型由E.F.Codd于1970年提出，是目前最流行的数据模型",
+              "关系是一张二维表，由行和列组成，每行称为元组，每列称为属性",
+              "主键是能唯一标识关系中每个元组的最小属性集",
+              "外键用于建立表与表之间的关系，实现参照完整性",
+              "关系代数提供选择、投影、连接等操作来查询数据"
+            ],
+            "en": [
+              "Relational model was proposed by E.F. Codd in 1970 and is the most popular data model",
+              "A relation is a two-dimensional table consisting of rows and columns",
+              "Primary key is the minimal set of attributes that uniquely identifies each tuple",
+              "Foreign key establishes relationships between tables for referential integrity",
+              "Relational algebra provides operations like selection, projection, and join"
+            ]
+          }
+        },
+        {
+          "point": "SQL",
+          "category": "sql",
+          "samples": {
+            "zh": [
+              "SQL是结构化查询语言，是关系数据库的标准语言",
+              "DDL数据定义语言用于创建、修改和删除数据库对象",
+              "DML数据操纵语言用于查询、插入、更新和删除数据",
+              "DCL数据控制语言用于授权和回收数据库访问权限",
+              "SELECT语句用于从数据库中查询数据，支持WHERE、GROUP BY等子句"
+            ],
+            "en": [
+              "SQL is Structured Query Language, the standard language for relational databases",
+              "DDL Data Definition Language creates, modifies, and deletes database objects",
+              "DML Data Manipulation Language queries, inserts, updates, and deletes data",
+              "DCL Data Control Language grants and revokes database access permissions",
+              "SELECT statement retrieves data from database with WHERE, GROUP BY clauses"
+            ]
+          }
+        },
+        {
+          "point": "范式理论",
+          "category": "normalization",
+          "samples": {
+            "zh": [
+              "第一范式1NF要求每个属性值都是不可再分的原子值",
+              "第二范式2NF在满足1NF的基础上，消除非主属性对主键的部分依赖",
+              "第三范式3NF在满足2NF的基础上，消除非主属性对主键的传递依赖",
+              "BCNF在满足3NF的基础上，消除主属性对候选键的部分和传递依赖",
+              "规范化通过分解关系模式来消除数据冗余和更新异常"
+            ],
+            "en": [
+              "First Normal Form requires all attribute values to be atomic and indivisible",
+              "Second Normal Form eliminates partial dependencies of non-key attributes on primary key",
+              "Third Normal Form eliminates transitive dependencies of non-key attributes on primary key",
+              "BCNF eliminates partial and transitive dependencies of prime attributes on candidate keys",
+              "Normalization decomposes relation schemas to eliminate redundancy and anomalies"
+            ]
+          }
+        },
+        {
+          "point": "ACID",
+          "category": "acid",
+          "samples": {
+            "zh": [
+              "原子性Atomicity保证事务中的所有操作要么全部完成，要么全部不完成",
+              "一致性Consistency确保事务执行前后数据库处于一致状态",
+              "隔离性Isolation保证并发事务之间互不干扰",
+              "持久性Durability确保已提交事务的结果永久保存在数据库中",
+              "ACID特性是关系数据库事务处理的核心保证"
+            ],
+            "en": [
+              "Atomicity ensures all operations in a transaction complete entirely or not at all",
+              "Consistency ensures database remains in a consistent state before and after transaction",
+              "Isolation guarantees concurrent transactions do not interfere with each other",
+              "Durability ensures committed transaction results are permanently saved",
+              "ACID properties are core guarantees of relational database transaction processing"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "chapter": 9,
+      "title": "计算机网络(Computer Networks)",
+      "knowledge_points": [
+        {
+          "point": "网络定义",
+          "category": "network_definition",
+          "samples": {
+            "zh": [
+              "计算机网络是将地理位置不同的独立计算机系统通过通信设备互连的集合",
+              "计算机网络的主要功能包括数据通信、资源共享和分布式处理",
+              "按覆盖范围可分为个人网PAN、局域网LAN、城域网MAN和广域网WAN",
+              "网络拓扑结构包括总线型、星型、环型、树型和网状型",
+              "网络协议是通信双方必须遵守的规则和约定"
+            ],
+            "en": [
+              "Computer network is a collection of independent computer systems connected by communication devices",
+              "Main network functions include data communication, resource sharing, and distributed processing",
+              "By coverage: PAN, LAN, MAN, and WAN",
+              "Network topologies include bus, star, ring, tree, and mesh",
+              "Network protocols are rules and conventions that communicating parties must follow"
+            ]
+          }
+        },
+        {
+          "point": "OSI模型",
+          "category": "osi_model",
+          "samples": {
+            "zh": [
+              "OSI参考模型是国际标准化组织提出的七层网络通信模型",
+              "物理层负责比特流的透明传输，定义电气和机械特性",
+              "数据链路层提供节点到节点的可靠传输，处理帧的封装和差错控制",
+              "网络层负责寻址和路由选择，实现分组从源到目的地的传输",
+              "传输层提供端到端的可靠数据传输服务，包括TCP和UDP协议"
+            ],
+            "en": [
+              "OSI reference model is a seven-layer network communication model by ISO",
+              "Physical layer handles transparent bit transmission, defining electrical and mechanical characteristics",
+              "Data link layer provides node-to-node reliable transmission with framing and error control",
+              "Network layer handles addressing and routing for packet delivery",
+              "Transport layer provides end-to-end reliable data transfer including TCP and UDP"
+            ]
+          }
+        },
+        {
+          "point": "TCP/IP",
+          "category": "tcp_ip",
+          "samples": {
+            "zh": [
+              "TCP/IP是互联网的基础协议栈，采用四层模型",
+              "网络接口层负责与物理网络的接口，处理帧的收发",
+              "网际层IP负责寻址和路由，提供无连接的数据报服务",
+              "传输层TCP提供面向连接的可靠传输，UDP提供无连接服务",
+              "应用层包含HTTP、FTP、SMTP等协议，为应用程序提供网络服务"
+            ],
+            "en": [
+              "TCP/IP is the foundational Internet protocol suite using a four-layer model",
+              "Network interface layer handles physical network interface and frame transmission",
+              "Internet layer IP provides addressing, routing, and connectionless datagram service",
+              "Transport layer TCP offers connection-oriented reliable transfer, UDP offers connectionless service",
+              "Application layer includes HTTP, FTP, SMTP protocols for application networking"
+            ]
+          }
+        },
+        {
+          "point": "HTTP",
+          "category": "http",
+          "samples": {
+            "zh": [
+              "HTTP是超文本传输协议，是Web应用的基础协议",
+              "HTTP使用请求-响应模型，客户端发送请求，服务器返回响应",
+              "HTTP方法包括GET、POST、PUT、DELETE等，用于不同操作",
+              "HTTP状态码表示请求处理结果，如200成功、404未找到、500服务器错误",
+              "HTTPS通过SSL/TLS加密HTTP通信，提供安全的数据传输"
+            ],
+            "en": [
+              "HTTP is HyperText Transfer Protocol, the foundation of Web applications",
+              "HTTP uses request-response model where client sends requests and server returns responses",
+              "HTTP methods include GET, POST, PUT, DELETE for different operations",
+              "HTTP status codes indicate request results: 200 success, 404 not found, 500 server error",
+              "HTTPS encrypts HTTP communication using SSL/TLS for secure data transfer"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "chapter": 10,
+      "title": "信息安全与伦理(Information Security & Ethics)",
+      "knowledge_points": [
+        {
+          "point": "网络安全",
+          "category": "network_security",
+          "samples": {
+            "zh": [
+              "防火墙是网络安全的屏障，控制进出网络的流量",
+              "入侵检测系统IDS监控网络流量，识别潜在的安全威胁",
+              "虚拟专用网络VPN通过加密隧道在公共网络上建立安全连接",
+              "网络分段将网络划分为多个区域，限制攻击的扩散范围",
+              "安全审计记录网络活动，用于事后分析和合规检查"
+            ],
+            "en": [
+              "Firewalls act as network security barriers controlling inbound and outbound traffic",
+              "Intrusion Detection Systems monitor network traffic for potential security threats",
+              "VPNs establish secure connections over public networks through encrypted tunnels",
+              "Network segmentation divides networks into zones to limit attack spread",
+              "Security auditing records network activities for analysis and compliance"
+            ]
+          }
+        },
+        {
+          "point": "密码学基础",
+          "category": "cryptography",
+          "samples": {
+            "zh": [
+              "对称加密使用相同密钥进行加密和解密，如AES算法",
+              "非对称加密使用公钥加密、私钥解密，如RSA算法",
+              "哈希函数将任意长度输入转换为固定长度输出，如SHA-256",
+              "数字签名使用私钥签名、公钥验证，确保数据完整性和身份认证",
+              "数字证书由可信第三方颁发，绑定公钥与实体身份"
+            ],
+            "en": [
+              "Symmetric encryption uses the same key for encryption and decryption, like AES",
+              "Asymmetric encryption uses public key for encryption and private key for decryption, like RSA",
+              "Hash functions convert variable-length input to fixed-length output, like SHA-256",
+              "Digital signatures use private key for signing and public key for verification",
+              "Digital certificates issued by trusted third parties bind public keys to entity identities"
+            ]
+          }
+        },
+        {
+          "point": "安全威胁",
+          "category": "security_threats",
+          "samples": {
+            "zh": [
+              "恶意软件包括病毒、蠕虫、木马、勒索软件等威胁系统安全",
+              "网络钓鱼通过伪造可信实体诱骗用户泄露敏感信息",
+              "拒绝服务攻击DoS通过大量请求耗尽目标资源，使其无法服务",
+              "中间人攻击MITM拦截并可能篡改通信双方的数据",
+              "零日漏洞是尚未被公开或修补的安全漏洞"
+            ],
+            "en": [
+              "Malware includes viruses, worms, trojans, and ransomware threatening system security",
+              "Phishing tricks users into revealing sensitive information by impersonating trusted entities",
+              "Denial of Service attacks exhaust target resources with excessive requests",
+              "Man-in-the-Middle attacks intercept and potentially modify communications",
+              "Zero-day vulnerabilities are security flaws not yet publicly disclosed or patched"
+            ]
+          }
+        },
+        {
+          "point": "数据隐私",
+          "category": "data_privacy",
+          "samples": {
+            "zh": [
+              "数据隐私保护个人敏感信息不被非法收集、使用或泄露",
+              "个人身份信息PII包括姓名、身份证号、生物特征等可识别个人身份的信息",
+              "数据脱敏通过匿名化或假名化处理，降低数据泄露风险",
+              "隐私增强技术PETs如差分隐私、同态加密保护数据隐私",
+              "GDPR和CCPA等法规规范了个人数据的收集和处理"
+            ],
+            "en": [
+              "Data privacy protects personal sensitive information from illegal collection or disclosure",
+              "Personally Identifiable Information includes names, IDs, and biometric data",
+              "Data anonymization and pseudonymization reduce breach risks",
+              "Privacy-Enhancing Technologies like differential privacy protect data privacy",
+              "Regulations like GDPR and CCPA govern personal data collection and processing"
+            ]
+          }
+        },
+        {
+          "point": "计算伦理",
+          "category": "computing_ethics",
+          "samples": {
+            "zh": [
+              "计算伦理研究信息技术使用中的道德问题和社会影响",
+              "算法偏见指算法可能对特定群体产生不公平的结果",
+              "人工智能伦理关注AI系统的透明度、可解释性和责任归属",
+              "专业道德规范要求计算机专业人员遵守诚实、保密和胜任等准则",
+              "技术决策应考虑对社会、环境和人类福祉的影响"
+            ],
+            "en": [
+              "Computing ethics studies moral issues and social impacts of information technology use",
+              "Algorithmic bias refers to unfair outcomes against specific groups from algorithms",
+              "AI ethics concerns transparency, explainability, and accountability of AI systems",
+              "Professional ethics require honesty, confidentiality, and competence from practitioners",
+              "Technology decisions should consider impacts on society, environment, and human welfare"
+            ]
+          }
+        },
+        {
+          "point": "知识产权",
+          "category": "intellectual_property",
+          "samples": {
+            "zh": [
+              "知识产权保护创造性智力成果，包括版权、专利、商标和商业秘密",
+              "软件版权保护源代码和目标代码的表达形式",
+              "开源许可证如GPL、MIT规定了软件的使用、修改和分发条件",
+              "软件专利保护软件中的技术创新和算法发明",
+              "尊重知识产权是计算机专业人员的基本职业道德"
+            ],
+            "en": [
+              "Intellectual property protects creative works including copyright, patents, trademarks, and trade secrets",
+              "Software copyright protects the expression of source and object code",
+              "Open source licenses like GPL and MIT govern software use, modification, and distribution",
+              "Software patents protect technical innovations and algorithm inventions",
+              "Respecting intellectual property is basic professional ethics for computing professionals"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
