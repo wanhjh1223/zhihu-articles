@@ -6,6 +6,7 @@
 
 | 编号 | 日期 | 论文 | 核心创新 |
 |------|------|------|----------|
+| 297 | 2026-04-10 | [FlashAttention-4: Blackwell架构深度优化](./297-2026-04-10-FlashAttention-4-Blackwell架构深度优化.md) | 针对NVIDIA Blackwell架构的非对称硬件扩展，通过算法-内核协同设计实现71%峰值利用率，超越cuDNN 1.3x和Triton 2.7x |
 | 296 | 2026-04-07 | [MASKSEARCH: Agent搜索能力预训练框架](./296-2026-04-07-MASKSEARCH-Agent搜索能力预训练框架.md) | 阿里通义实验室提出RAMP预训练任务，多智能体+自进化蒸馏+课程学习，显著增强LLM Agent搜索能力 |
 | 279 | 2025-04-06 | [RAG-Critic: 自动化批评引导智能体工作流](./279-2025-04-06-RAG-Critic-自动化批评引导智能体框架.md) | 首个层次化RAG错误系统(7/19/4000+标签)，批评模型自动诊断+规划智能体自我修正 |
 | 278 | 2026-04-06 | [SKILL0-ICRL: 内化技能到推理过程](./278-2026-04-06-SKILL0-ICRL-Skill-Internalization.md) | 将外部工具调用能力内化到推理过程中，实现零工具调用的Agent推理 |
@@ -13,6 +14,7 @@
 ## 📚 已收录论文列表
 
 ### 架构创新
+- FlashAttention-4 - Blackwell架构Attention优化 (2026)
 - Titans - 神经长时记忆架构 (Google Research)
 - Mamba系列 - 状态空间模型
 - Mixture of Experts (MoE) - 混合专家模型
